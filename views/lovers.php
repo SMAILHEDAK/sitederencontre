@@ -14,7 +14,7 @@
     <title>Made with "LOVE"</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+<nav class="navbar navbar-expand-sm sticky-top navStyle">
   <a class="navbar-brand" href="#">Logo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Bonjour (insérer le cookie nom d'utilisateur) <3</a>
+        <p class="nav-link" href="#">Bonjour (insérer le cookie nom d'utilisateur) <3</p>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="lovers.php">Nos célibataires</a>
@@ -33,7 +33,6 @@
     </ul>
   </div>  
 </nav>
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>
