@@ -1,14 +1,30 @@
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* Global Styles */
+.navStyle{
+  background-color: #4A2B0D!important;
+}
+
+.navTxtUser{
+  color: white;
+}
+
+.iconColor{
+  color:#E36414;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* page LOVERS.PHP */
 .loversBody{
-  background-color: #fb7c2c;
+  background-color: #fb7b2c80;
 }
 
 .loversCardSingle{
-  width: 400px;
+  width: 270px;
 }
 
 .loversCardImg{
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: 150px;
 }
 
 .loversCardFooter{
@@ -18,11 +34,18 @@
 
 .loversCardTitle{
   font-family: 'Nunito', sans-serif;
-}
-.navStyle{
-background-color: #4A2B0D!important;
+  font-size: large;
+  font-weight: bold;
 }
 
-.iconColor{
-    color:#E36414;
+.loversCardBtnLike{
+  display: block;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color:blue;
+  background: url("../img/logo.png") no-repeat;
+  border: 1px solid black;
 }

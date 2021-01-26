@@ -4,7 +4,7 @@ function crTbSingles (){
   // Creation of the singles table
   $tb = [["lastname"=>"Doe", "firstname"=> "John", "age"=>"33 ans", "gender"=>"homme", "mail"=>"JohnDoe@gmail.com", "zipcode"=>"36400", "picture"=>"toto.jpg", "description"=>"Bel homme de 33 ans, sportif, aime le cinéma et les ballades"],
   ["lastname"=>"Grapelli", "firstname"=>"Stéphane", "age"=>"35", "gender"=>"homme", "mail"=>"stephgrappelli@laposte.net", "zipcode"=>"62420", "picture"=>"GrappelliS12.jpg", "description"=>"Avec mon pote Django nous avons fait les 400 coups, mais maintenant j'aimerais me poser un peu !"],
-  ["lastname"=>"Reinhardt", "firstname"=>"Django", "age"=>"28", "gender"=>"homme", "mail"=>"djreinhardt@yahoo.fr", "zipcode"=>"32000", "picture"=>"ReinhardtR13.jpg", "description"=>"Mon ami Stéphane veut à tout prix me caser, je préfère prendre les devants !"],
+  ["lastname"=>"Reinhardt", "firstname"=>"Django", "age"=>"28", "gender"=>"homme", "mail"=>"djreinhardt@yahoo.fr", "zipcode"=>"32000", "picture"=>"ReinhardtD13.jpg", "description"=>"Mon ami Stéphane veut à tout prix me caser, je préfère prendre les devants !"],
   ["lastname"=>"Ellington", "firstname"=>"Duke", "age"=>"36", "gender"=>"homme", "mail"=>"dellington@gmail.com", "zipcode"=>"432600", "picture"=>"EllingtonD14.jpg", "description"=>"Mes copains sont ma famille, j'aimerais l'agrandir"],
   ["lastname"=>"Davis", "firstname"=>"Miles", "age"=>"36", "gender"=>"homme", "mail"=>"mildavis@live.com", "zipcode"=>"648890", "picture"=>"DavisM15.jpg", "description"=>"mon incroyable sensibilité vous séduira"],
   ["lastname"=>"Shorty", "firstname"=>"Trombone", "age"=>"24", "gender"=>"homme", "mail"=>"TromboneShorty@theposte.net", "zipcode"=>"564200", "picture"=>"ShortyT16.jpg", "description"=>"GlobeTrotter dans l'âme pour partager ma musique avec un maximum de personnes"],
@@ -27,4 +27,6 @@ function crTbSingles (){
   // ["lastname"=>"", "firstname"=>"", "age"=>"", "gender"=>"", "mail"=>"@", "zipcode"=>"", "picture"=>"", "description"=>""]
   return $tb;
 }
+
+
 ?>

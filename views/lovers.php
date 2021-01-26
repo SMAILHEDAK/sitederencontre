@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="../assets/img/logo.png">
     <title>Made with "LOVE"</title>
 </head>
 
@@ -24,7 +25,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <p class="nav-link" href="#">Bonjour (insérer le cookie nom d'utilisateur) <3</p>
+        <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="lovers.php">Nos célibataires</a>
@@ -39,21 +40,30 @@
     <!-- Creation of singles table -->
     <?php $tabSingles = crTbSingles()?>
     <!-- Card management -->
-    <div class="container">
+    <div class="container-fluid">
       <h1 class="loversTitleCards">Voici nos candidats à conquête</h1>
-      <div class="card loversCardSingle">
-        <img src="../assets/img/<?= $tabSingles[1]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
-        <div class="card-header">
-          <h2 class="card-title loversCardTitle"><?= $tabSingles[1]["firstname"] . " " . $tabSingles[1]["lastname"] ?></h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 justify-content-around">
+        <?php 
+          for ($i = 0 ; $i < count($tabSingles) ; $i++){ ?>
+            <div class="col">
+              <div class="card border-dark loversCardSingle">
+                <div class="mx-auto">
+                  <img src="../assets/img/<?= $tabSingles[$i]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
+                </div>
+                <div class="card-header text-center">
+                  <h2 class="card-title loversCardTitle"><?= $tabSingles[$i]["firstname"] . " " . $tabSingles[$i]["lastname"] ?></h2>
+                </div>
+                <div class="card-body">
+                  <p class="loversCardText">Age : <?= $tabSingles[$i]["age"]?></p>
+                      <a href="" class="loversCardBtnLike">Mangez-moi</a>
+                </div>
+                <div class="card-footer loversCardFooter">
+                  Footer
+                </div>
+              </div>
+            </div>
+          <?php } ?>
         </div>
-        <div class="card-body">
-          <p class="loversCardText">Age : <?= $tabSingles[1]["age"]?></p>
-          <a href="" class="loversCardBtnLike">Mangez-moi</a>
-        </div>
-        <div class="card-footer loversCardFooter">
-          Footer
-        </div>
-      </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>

@@ -1,5 +1,5 @@
 <?php
-    require "/var/www/html/sitederencontre/controllers/index_controller.php";
+    require "controllers/index_controller.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -48,6 +48,7 @@
            <input type="submit" name="submit_button" namevalue="S'enregistrer!">
         </form>
     </div>
+    <a href="views/lovers.php">LOVERS</a>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
