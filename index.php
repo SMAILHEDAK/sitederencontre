@@ -13,6 +13,8 @@
 </head>
 <body>
 
+    <a href="views/lovers.php">LOVERS</a>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
