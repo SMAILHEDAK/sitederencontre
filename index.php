@@ -10,10 +10,13 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="assets/img/logo.png">
     <title>Made with "LOVE"</title>
 </head>
 <body>
+
+    <a href="views/lovers.php">LOVERS</a>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

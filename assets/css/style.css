@@ -1,0 +1,21 @@
+.loversBody{
+  background-color: #fb7c2c;
+}
+
+.loversCardSingle{
+  width: 400px;
+}
+
+.loversCardImg{
+  width: 100px;
+  height: 100px;
+}
+
+.loversCardFooter{
+  background-color: #fa0f3a;
+  color: white;
+}
+
+.loversCardTitle{
+  font-family: 'Nunito', sans-serif;
+}
