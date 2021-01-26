@@ -1,4 +1,10 @@
 <?php
+if (isset($_COOKIE["lastname"], $_COOKIE["surname"], $_COOKIE["age"], $_COOKIE["genre"], $_COOKIE["postcode"], $_COOKIE["email"], $_COOKIE["searchingFor"])){
+    header( "Location:views/lovers.php");
+    exit();
+}
+
+else{
 if(isset($_POST['submit_button'])) {
     $lastname = $_POST["lastname"];
     $surname = $_POST["surname"];
@@ -17,6 +23,7 @@ if(isset($_POST['submit_button'])) {
         setcookie("searchingFor", $searchingFor, time()+86400,"/");
         header( "Location:views/lovers.php");
 		exit();
+}
 }
 }
 ?>
