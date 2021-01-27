@@ -41,18 +41,18 @@
     <?php $tabSingles = crTbSingles()?>
 
     <!-- Card management -->
-    <div class="container-fluid">
+    <div class="container-fluid indexParallax">
       <div class="text-center loversTitleDiv">
         <h1 class="loversTitleCards">Nos candidats à conquête</h1>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 justify-content-around">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 justify-content-center">
         <?php 
           for ($i = 0 ; $i < count($tabSingles) ; $i++){ 
             if (($_COOKIE["searchingFor"] == $tabSingles[$i]["gender"])||($_COOKIE["searchingFor"]=="cookie")){?>
 
             <!-- if gender searching = gender of the table's row OR gender searching = "cookie", creation of the card -->
-              <div class="col">
+              <div class="col loversCardCol mx-auto">
                 <div class="card border-dark shadow-lg p-3 mb-5 rounded loversCardSingle">
                   <div class="mx-auto">
                     <img src="../assets/img/<?= $tabSingles[$i]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
@@ -63,7 +63,7 @@
                   <div class="card-body">
                     <p class="loversCardText">Age : <?= $tabSingles[$i]["age"]?></p>
                     <div class="mx-auto">
-                        <a href="" class="loversCardBtnLike">Mangez-moi</a>
+                        <a href="" class="loversCardBtnLike"><i class="fas fa-cookie-bite"></i> Mangez-moi</a>
                     </div>
                   </div>
                   <div class="card-footer loversCardFooter">

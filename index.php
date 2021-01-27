@@ -110,7 +110,7 @@
                                        </select>
                                        </div>
                                        </div>
-                                       <input type="submit" name="submit_button" value="S'enregistrer!">
+                                       <input type="submit" name="submit_button" value="S'enregistrer!" class="indexBtnSubmit">
                                     </form>
                                 </div>
                             </div>

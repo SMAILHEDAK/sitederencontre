@@ -61,24 +61,31 @@
 
 .loversCardBtnLike{
   display: block;
-  width: 180px;
+  width: 120px;
   line-height: 32px;
   text-align: center;
   text-decoration: none;
   color: var(--colBtnTxt);
-  background: url("../img/cookie.jpg") no-repeat;
+  /* background: url("../img/cookie.jpg") no-repeat; */
   border: 1px solid var(--colBtnBorder);
   border-radius: var(--valRadiusBtn);
+  transition: transform 450ms, background-color 450ms, color 450ms;
 }
 
 .loversCardBtnLike:hover{
-  color: var(--colBtnTxt);
+  color: var(--colFootTxt);
+  transform: scale(1.15);
+  background-color: var(--colBtnTxt);
 }
 
 .loversCardFooterPart{
   display: inline;
 }
 
+.loversCardCol{
+  background-color: var(--colBack);
+  /* border: 1px solid black; */
+}
 
 /* page index.php */
 
@@ -98,6 +105,20 @@
   background-attachment: fixed;
 }
 
+.indexBtnSubmit{
+  border: 1px solid var(--colBtnTxt);
+  border-radius: var(--valRadiusBtn);
+  color: var(--colBtnTxt);
+  text-decoration: none;
+  background-color: var(--colFootTxt);
+  transition: transform 450ms, background-color 450ms, color 450ms;
+}
+
+.indexBtnSubmit:hover{
+  background-color: var(--colBtnBorder);
+  color: var(--colFootTxt);
+  transform: scale(1.15);
+}
 /* page USERS.PHP */
 
 .usersBody{
@@ -111,7 +132,7 @@
 
 .usersTitle{
   display: inline;
-  width: 200px;
+  width: 250px;
 }
 
 .usersInfoTitle{
@@ -133,23 +154,19 @@
   border-radius: var(--valRadiusBtn);
   color: var(--colBtnTxt);
   text-decoration: none;
+  transition: transform 450ms, background-color 450ms, color 450ms;
 }
 
-.usersBtnRaz:hover, .usersBtnMeetic{
-  color: var(--colBtnTxt);
+.usersBtnRaz:hover, .usersBtnMeetic:hover{
+  color: var(--colFootTxt);
+  transform: scale(1.15);
+  background-color: var(--colBtnTxt);
 }
 
 .usersBtnDiv{
   height: 200px;
 }
 
-/* .col{
-  border: 1px solid red;
-}
-
-.row{
-  border: 1px solid blue;
-} */
 /* FOOTER */
 .globalFooter{
   background-color: #4A2B0D!important;
