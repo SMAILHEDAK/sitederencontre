@@ -39,15 +39,19 @@
 
     <!-- Creation of singles table -->
     <?php $tabSingles = crTbSingles()?>
+
     <!-- Card management -->
     <div class="container-fluid">
       <div class="text-center loversTitleDiv">
         <h1 class="loversTitleCards">Nos candidats à conquête</h1>
       </div>
+
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 justify-content-around">
         <?php 
           for ($i = 0 ; $i < count($tabSingles) ; $i++){ 
             if (($_COOKIE["searchingFor"] == $tabSingles[$i]["gender"])||($_COOKIE["searchingFor"]=="cookie")){?>
+
+            <!-- if gender searching = gender of the table's row OR gender searching = "cookie", creation of the card -->
               <div class="col">
                 <div class="card border-dark shadow-lg p-3 mb-5 rounded loversCardSingle">
                   <div class="mx-auto">

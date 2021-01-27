@@ -1,4 +1,14 @@
 /* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Global variables */
+:root{
+--nameFont: "Nunito";
+--colBack: #fb7b2c80;
+--colBtnTxt: saddlebrown;
+--colBtnBorder: #341f09;
+--valRadiusBtn: 10px;
+}
+
 /* Global Styles */
 .navStyle{
   background-color: #4A2B0D!important;
@@ -15,8 +25,8 @@
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* page LOVERS.PHP */
 .loversBody{
-  background-color: #fb7b2c80;
-  font-family: 'Nunito', sans-serif;
+  background-color: var(--colBack);
+  font-family: var(--nameFont), sans-serif;
 }
 
 .loversTitleDiv{
@@ -53,16 +63,15 @@
   width: 180px;
   line-height: 32px;
   text-align: center;
-  vertical-align: middle;
   text-decoration: none;
-  color: saddlebrown;
+  color: var(--colBtnTxt);
   background: url("../img/cookie.jpg") no-repeat;
-  border: 1px solid #341f09;
-  border-radius: 10px;
+  border: 1px solid var(--colBtnBorder);
+  border-radius: var(--valRadiusBtn);
 }
 
 .loversCardBtnLike:hover{
-  color: saddlebrown;
+  color: var(--colBtnTxt);
 }
 
 .loversCardFooterPart{
@@ -87,3 +96,56 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+/* page USERS.PHP */
+
+.usersBody{
+  font-family: var(--nameFont);
+  background-color: var(--colBack);
+}
+
+.usersTitleDiv{
+  height: 100px;
+}
+
+.usersTitle{
+  display: inline;
+  width: 200px;
+}
+
+.usersInfoTitle{
+  font-size: large;
+  font-weight: bold;
+}
+
+.usersBtnRaz{
+  width: 170px;
+}
+
+.usersBtnMeetic{
+  width: 250px;
+}
+
+.usersBtnRaz, .usersBtnMeetic{
+  display: block;
+  border: 1px solid var(--colBtnTxt);
+  border-radius: var(--valRadiusBtn);
+  color: var(--colBtnTxt);
+  text-decoration: none;
+}
+
+.usersBtnRaz:hover, .usersBtnMeetic{
+  color: var(--colBtnTxt);
+}
+
+.usersBtnDiv{
+  height: 200px;
+}
+
+/* .col{
+  border: 1px solid red;
+}
+
+.row{
+  border: 1px solid blue;
+} */
