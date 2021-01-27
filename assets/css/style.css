@@ -149,3 +149,11 @@
 .row{
   border: 1px solid blue;
 } */
+/* FOOTER */
+.globalFooter{
+  background-color: #4A2B0D!important;
+}
+
+.globalFooterText{
+  color:#E36414;
+}
