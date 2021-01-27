@@ -268,7 +268,7 @@
         <h5 class="text-uppercase globalFooterText">MENTIONS LEGALES</h5>
         <ul class="list-unstyled mb-0">
           <li>
-            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn text-white" data-toggle="modal" data-target="#exampleModal">
             Accéder aux mentions légales
             </button>
           </li>
@@ -278,16 +278,10 @@
         <h5 class="text-uppercase mb-0 globalFooterText">NOUS CONTACTER</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!" class="text-white">Link 1</a>
+            <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer" class="text-white">Contacter nous via email</a>
           </li>
           <li>
-            <a href="#!" class="text-white">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-white">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-white">Link 4</a>
+              <p class="text-white">Ou bien retrouvez nous à cette adresse : Frafjordstraen 22, 4335 Dirdal, Norway </p>
           </li>
         </ul>
       </div>
