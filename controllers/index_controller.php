@@ -6,12 +6,19 @@ if (isset($_COOKIE["lastname"], $_COOKIE["surname"], $_COOKIE["age"], $_COOKIE["
 else{
 if(isset($_POST['submit_button'])) {
     $lastname = $_POST["lastname"];
+    $lastname = htmlentities($lastname);
     $surname = $_POST["surname"];
+    $surname = htmlentities($surname);
     $age = $_POST["age"];
+    $age = htmlentities($age);
     $gender = $_POST["gender"];
+    $gender = htmlentities($gender);
     $postcode = $_POST["postcode"];
+    $postcode = htmlentities($postcode);
     $email = $_POST["mail"];
+    $email = htmlentities($email);
     $searchingFor = $_POST["searchingFor"];
+    $searchingFor = htmlentities($searchingFor);
     if($lastname && $surname && $age && $gender && $email && $postcode && $searchingFor){
         setcookie("lastname", $lastname, time()+86400,"/");
         setcookie("surname", $surname, time()+86400,"/");
@@ -25,4 +32,5 @@ if(isset($_POST['submit_button'])) {
 }
 }
 }
+
 ?>

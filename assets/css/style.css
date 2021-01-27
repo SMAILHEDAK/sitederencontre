@@ -12,6 +12,14 @@
   color:#E36414;
 }
 
+.globalFooter{
+  background-color: #4A2B0D!important;
+}
+
+.globalFooterText{
+  color:#E36414;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* page LOVERS.PHP */
 .loversBody{
@@ -88,11 +96,3 @@
   background-attachment: fixed;
 }
 
-/* FOOTER */
-.globalFooter{
-  background-color: #4A2B0D!important;
-}
-
-.globalFooterText{
-  color:#E36414;
-}
