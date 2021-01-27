@@ -37,48 +37,50 @@
   </div>  
 </nav>
 
-  <div class="container-fluid">
-    <div class="text-center usersTitleDiv">
-      <h1 class="usersTitle align-self-center ">Votre profil</h1>
+  <div class="container-fluid indexParallax">
+    <div class="text-center mx-auto mb-3 usersTitleDiv">
+      <h1 class="usersTitle">Votre profil</h1>
     </div>
 
     <!-- Display cookie's informations -->
-    <div class="row justify-content-center">
-      <div class="col col-md-1 usersInfoTitle">Nom</div>
-      <div class="col col-md-1 usersInfoData"><?= $_COOKIE["lastname"] ?></div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col col-md-1 usersInfoTitle">Prénom</div>
-      <div class="col col-md-1 usersInfoData"><?= $_COOKIE["surname"] ?></div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col col-md-1 usersInfoTitle">Age</div>
-      <div class="col col-md-1 usersInfoData"><?= $_COOKIE["age"] ?></div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col col-md-1 usersInfoTitle">Genre</div>
-      <div class="col col-md-1 usersInfoData"><?= $_COOKIE["gender"] ?></div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col col-md-1 usersInfoTitle">Code Postal</div>
-      <div class="col col-md-1 usersInfoData"><?= $_COOKIE["postcode"] ?></div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col col-md-1 usersInfoTitle">Email</div>
-      <div class="col col-md-1 usersInfoData"><?= $_COOKIE["email"] ?></div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col col-md-1 usersInfoTitle">Vous recherchez</div>
-      <div class="col col-md-1 usersInfoData"><?= $_COOKIE["searchingFor"] ?></div>
-    </div>
-    <div class="row justify-content-center text-center usersBtnDiv">
-      <div class="col col-md-2 align-self-center">
-        <a href="user.php?clickBtnRaz=true" class="usersBtnRaz">Effacer le profil</a>
+    <!-- <div class="row usersContent"> -->
+      <div class="row justify-content-center">
+        <div class="col col-md-1 usersInfoTitle">Nom</div>
+        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["lastname"] ?></div>
       </div>
-      <div class="col col-md-3 align-self-center">
-        <a href="http://www.meetic.fr" class="usersBtnMeetic" target="_blank">Aller sur le site de Meetic</a>
+      <div class="row justify-content-center">
+        <div class="col col-md-1 usersInfoTitle">Prénom</div>
+        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["surname"] ?></div>
       </div>
-    </div>
+      <div class="row justify-content-center">
+        <div class="col col-md-1 usersInfoTitle">Age</div>
+        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["age"] ?></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-md-1 usersInfoTitle">Genre</div>
+        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["gender"] ?></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-md-1 usersInfoTitle">Code Postal</div>
+        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["postcode"] ?></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-md-1 usersInfoTitle">Email</div>
+        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["email"] ?></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-md-1 usersInfoTitle">Vous recherchez</div>
+        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["searchingFor"] ?></div>
+      </div>
+      <div class="row justify-content-center text-center usersBtnDiv">
+        <div class="col col-md-2 align-self-center">
+          <a href="user.php?clickBtnRaz=true" class="usersBtnRaz">Effacer le profil</a>
+        </div>
+        <div class="col col-md-3 align-self-center">
+          <a href="http://www.meetic.fr" class="usersBtnMeetic" target="_blank">Aller sur le site de Meetic</a>
+        </div>
+      </div>
+    <!-- </div> -->
 
 </div>
 

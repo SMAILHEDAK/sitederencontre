@@ -39,12 +39,14 @@
 }
 
 .loversTitleDiv{
-  height: 100px;
+  width: 500px;
+  height: 55px;
+  background-color: var(--colBack);
+  border-radius: var(--valRadiusBtn);
 }
 
 .loversTitleCards{
   display: inline;
-  width:200px;
 }
 
 .loversCardSingle{
@@ -74,7 +76,6 @@
   text-align: center;
   text-decoration: none;
   color: var(--colBtnTxt);
-  /* background: url("../img/cookie.jpg") no-repeat; */
   border: 1px solid var(--colBtnBorder);
   border-radius: var(--valRadiusBtn);
   transition: transform 450ms, background-color 450ms, color 450ms;
@@ -92,7 +93,7 @@
 
 .loversCardCol{
   background-color: var(--colBack);
-  /* border: 1px solid black; */
+  border-radius: var(--valRadiusBtn);
 }
 
 /* page index.php */
@@ -135,17 +136,25 @@
 }
 
 .usersTitleDiv{
-  height: 100px;
+  width: 500px;
+  height: 55px;
+  background-color: var(--colBack);
+  border-radius: var(--valRadiusBtn);
 }
 
 .usersTitle{
   display: inline;
-  width: 250px;
 }
 
 .usersInfoTitle{
   font-size: large;
   font-weight: bold;
+}
+
+.usersContent{
+  background-color: var(--colBack);
+  width: 500px;
+  border-radius: var(--valRadiusBtn);
 }
 
 .usersBtnRaz{
@@ -175,8 +184,6 @@
   height: 200px;
 }
 
-<<<<<<< HEAD
-=======
 /* .col{
   border: 1px solid red;
 }
@@ -185,7 +192,6 @@
   border: 1px solid blue;
 } */
 
->>>>>>> c432fd7c12f6511c30ce320b1e154bff5ac95401
 /* FOOTER */
 .globalFooter{
   background-color: #4A2B0D!important;
