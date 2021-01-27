@@ -4,6 +4,7 @@
 :root{
 --nameFont: "Nunito";
 --colBack: #fb7b2c80;
+--colFootTxt: #FCBC95;
 --colBtnTxt: saddlebrown;
 --colBtnBorder: #341f09;
 --valRadiusBtn: 10px;
@@ -156,4 +157,8 @@
 
 .globalFooterText{
   color:#E36414;
+}
+
+.globalFooterSubText{
+  color: var(--colFootTxt);
 }
