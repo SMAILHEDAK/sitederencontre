@@ -67,3 +67,12 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+/* FOOTER */
+.globalFooter{
+  background-color: #4A2B0D!important;
+}
+
+.globalFooterText{
+  color:#E36414;
+}
