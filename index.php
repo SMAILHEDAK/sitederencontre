@@ -13,69 +13,112 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="assets/img/logo.png">
-    <title>Made with "LOVE"</title>
+    <title>Munch</title>
 </head>
-<body>
-    <header class="container-fluid row" id="welcome">
-    <i class="fas fa-cookie-bite fa-3x iconColor col align-left pt-2 pr-2" alt="BITEME"></i>
+<body class="container-fluid wh-100 m-0 p-0">
+
+    <header class="container-fluid d-flex justify-content-center align-items-center" id="welcome">
+    <i class="fas fa-cookie-bite fa-3x iconColor" alt="BITEME">MUNCH</i>
     </header>
-    <div id="formcard" class="parallax container-fluid align-items-center border d-flex justify-content-center w-50">
-        <form action="index.php" method="post">
-            <div class="row mb-3">
-           <label for="lastname">Nom :</label>
-           <div class="col-auto">
-           <input type="text" name="lastname" id="lastname">
-           </div>
-           </div>
-           <div class="row mb-3">
-           <label for="surname">Prénom :</label>
-           <div class="col-auto">
-           <input type="text" name="surname" id="surname">
-           </div>
-           </div>
-           <div class="row mb-3">
-           <label for="age">Age :</label>
-           <div class="col-auto">
-           <input type="text" name="age" id="age">
-           </div>
-           </div>
-           <div class="row mb-3">
-           <label for="genre">Genre :</label>
-           <div class="col-auto">
-           <select name="genre" id="genre" class="form-select">
-               <option value="genre">genre</option>
-               <option value="homme">homme</option>
-               <option value="femme">femme</option>
-               <option value="cookie">cookie</option>
-           </select>
-           </div>
-           </div>
-           <div class="row mb-3">
-           <label for="postcode">Code Postal :</label>
-           <div class="col-auto">
-           <input type="text" name="postcode" id="postcode" class="row">
-           </div>
-           </div>
-           <div class="row mb-3">
-           <label for="mail">Adresse Mail :</label>
-           <div class="col-auto">
-           <input type="email" name="mail" id="mail" class="row">
-           </div>
-           </div>
-           <div class="row mb-3">
-           <label for="searchingFor">Vous recherchez :</label>
-           <div class="col-auto">
-           <select name="searchingFor" id="searchingFor" class="form-select">
-               <option value="genre">genre</option>
-               <option value="homme">homme</option>
-               <option value="femme">femme</option>
-               <option value="cookie">cookie</option>
-           </select>
-           </div>
-           </div>
-           <input type="submit" name="submit_button" value="S'enregistrer!">
-        </form>
-    </div>
+      <!-------------------------------------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------   BLOC IMAGE   --------------------------------------------------------------->
+        <!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <section class="indexParallax" id="welcomeForm">
+        <section class="container-fluid w-75 h-auto d-flex indexWelcomeFormImage justify-content-center">
+            <div class="row welcomeFormImage align-items-center">
+                <div class="col-md-6">
+                    <div class="row pt-4">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="row p-5">
+                        <div class="col-md-12">
+                            <div>
+                                <img src="assets/img/imageform.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <!--------------------------------------------------------------------------------------------------------------------------------------------->
+                <!---------------------------------------------------   BLOC FORMULAIRE   ----------------------------------------------------------->
+                <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <div id="info" class="indexWelcomeForm col-md-6">
+                    <div class="align-items-center row pt-4">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="row p-5">
+                        <div class="col-md-12 text-center fw-bold">
+                            <div class="text-center">
+                                <div id="formcard" class="container-fluid">
+                                    <form action="index.php" method="post">
+                                        <div class="row mb-3">
+                                       <label for="lastname">Nom :</label>
+                                       <div class="col">
+                                       <input type="text" name="lastname" id="lastname">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="surname">Prénom :</label>
+                                       <div class="col">
+                                       <input type="text" name="surname" id="surname">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="age">Age :</label>
+                                       <div class="col">
+                                       <input type="text" name="age" id="age">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="gender">Genre :</label>
+                                       <div class="col d-flex justify-content-center">
+                                       <select name="gender" id="gender" class="form-select w-auto">
+                                           <option value="gender">genre</option>
+                                           <option value="homme">homme</option>
+                                           <option value="femme">femme</option>
+                                           <option value="cookie">cookie</option>
+                                       </select>
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="postcode">Code Postal :</label>
+                                       <div class="col">
+                                       <input type="text" name="postcode" id="postcode">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="mail">Adresse Mail :</label>
+                                       <div class="col">
+                                       <input type="email" name="mail" id="mail">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="searchingFor">Vous recherchez :</label>
+                                       <div class="col d-flex justify-content-center">
+                                       <select name="searchingFor" id="searchingFor" class="form-select w-auto">
+                                           <option value="genre">genre</option>
+                                           <option value="homme">homme</option>
+                                           <option value="femme">femme</option>
+                                           <option value="cookie">cookie</option>
+                                       </select>
+                                       </div>
+                                       </div>
+                                       <input type="submit" name="submit_button" value="S'enregistrer!">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</section>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
