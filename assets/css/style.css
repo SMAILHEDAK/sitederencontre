@@ -4,6 +4,7 @@
 :root{
 --nameFont: "Nunito";
 --colBack: #fb7b2c80;
+--colBack2: #fb7b2c50;
 --colFootTxt: #FCBC95;
 --colBtnTxt: saddlebrown;
 --colBtnBorder: #341f09;
@@ -96,6 +97,7 @@
   border-radius: var(--valRadiusBtn);
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------- */
 /* page index.php */
 
 .indexWelcomeFormImage{
@@ -128,6 +130,8 @@
   color: var(--colFootTxt);
   transform: scale(1.15);
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
 /* page USERS.PHP */
 
 .usersBody{
@@ -151,6 +155,12 @@
   font-weight: bold;
 }
 
+.usersInfoData, .usersInfoTitle{
+  background-color: var(--colBack2);
+  border-radius: var(--valRadiusBtn);
+  
+}
+
 .usersContent{
   background-color: var(--colBack);
   width: 500px;
@@ -171,6 +181,7 @@
   border-radius: var(--valRadiusBtn);
   color: var(--colBtnTxt);
   text-decoration: none;
+  background-color: var(--colBack);
   transition: transform 450ms, background-color 450ms, color 450ms;
 }
 
@@ -184,13 +195,6 @@
   height: 200px;
 }
 
-/* .col{
-  border: 1px solid red;
-}
-
-.row{
-  border: 1px solid blue;
-} */
 
 /* FOOTER */
 .globalFooter{

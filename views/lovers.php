@@ -217,7 +217,7 @@
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
         <h5 class="text-uppercase globalFooterText">NOTRE MISSION</h5>
-        <p class="text-white">
+        <p class="globalFooterSubText">
          Notre but est de permettre aux fans de jazz et de cookies de trouver l'amour et s'épanouir dans leur vie d'artiste fan de cookies.
          Qu'ils s'identifient en tant qu'Homme, Femme, ou bien Cookie, rien ne les empêchera de trouver saxophone à leur guitare.
         </p>
@@ -226,7 +226,7 @@
         <h5 class="text-uppercase globalFooterText">MENTIONS LEGALES</h5>
         <ul class="list-unstyled mb-0">
           <li>
-            <button type="button" class="btn text-white" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn globalFooterSubText" data-toggle="modal" data-target="#exampleModal">
             Accéder aux mentions légales
             </button>
           </li>
@@ -236,17 +236,17 @@
         <h5 class="text-uppercase mb-0 globalFooterText">NOUS CONTACTER</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer" class="text-white">Contacter nous via email</a>
+            <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer" class="globalFooterSubText">Contacter nous via email</a>
           </li>
           <li>
-              <p class="text-white">Ou bien retrouvez nous à cette adresse : Frafjordstraen 22, 4335 Dirdal, Norway </p>
+              <p class="globalFooterSubText">Ou bien retrouvez nous à cette adresse : Frafjordstraen 22, 4335 Dirdal, Norway </p>
           </li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="text-center p-3 text-white">
+  <div class="text-center p-3 globalFooterSubText">
     © 2021 Copyright: MunchInc
   </div>
 </footer>

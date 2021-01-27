@@ -43,34 +43,33 @@
     </div>
 
     <!-- Display cookie's informations -->
-    <!-- <div class="row usersContent"> -->
       <div class="row justify-content-center">
-        <div class="col col-md-1 usersInfoTitle">Nom</div>
-        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["lastname"] ?></div>
+        <div class="col col-md-1 mb-3 usersInfoTitle">Nom</div>
+        <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["lastname"] ?></div>
       </div>
       <div class="row justify-content-center">
-        <div class="col col-md-1 usersInfoTitle">Prénom</div>
-        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["surname"] ?></div>
+        <div class="col col-md-1 mb-3 usersInfoTitle">Prénom</div>
+        <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["surname"] ?></div>
       </div>
       <div class="row justify-content-center">
-        <div class="col col-md-1 usersInfoTitle">Age</div>
-        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["age"] ?></div>
+        <div class="col col-md-1 mb-3 usersInfoTitle">Age</div>
+        <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["age"] ?></div>
       </div>
       <div class="row justify-content-center">
-        <div class="col col-md-1 usersInfoTitle">Genre</div>
-        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["gender"] ?></div>
+        <div class="col col-md-1 mb-3 usersInfoTitle">Genre</div>
+        <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["gender"] ?></div>
       </div>
       <div class="row justify-content-center">
-        <div class="col col-md-1 usersInfoTitle">Code Postal</div>
-        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["postcode"] ?></div>
+        <div class="col col-md-1 mb-3 usersInfoTitle">Code Postal</div>
+        <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["postcode"] ?></div>
       </div>
       <div class="row justify-content-center">
-        <div class="col col-md-1 usersInfoTitle">Email</div>
-        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["email"] ?></div>
+        <div class="col col-md-1 mb-3 usersInfoTitle">Email</div>
+        <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["email"] ?></div>
       </div>
       <div class="row justify-content-center">
-        <div class="col col-md-1 usersInfoTitle">Vous recherchez</div>
-        <div class="col col-md-1 usersInfoData"><?= $_COOKIE["searchingFor"] ?></div>
+        <div class="col col-md-1 mb-3 usersInfoTitle">Vous recherchez</div>
+        <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["searchingFor"] ?></div>
       </div>
       <div class="row justify-content-center text-center usersBtnDiv">
         <div class="col col-md-2 align-self-center">
@@ -80,7 +79,6 @@
           <a href="http://www.meetic.fr" class="usersBtnMeetic" target="_blank">Aller sur le site de Meetic</a>
         </div>
       </div>
-    <!-- </div> -->
 
 </div>
 
@@ -90,7 +88,7 @@
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
         <h5 class="text-uppercase globalFooterText">NOTRE MISSION</h5>
-        <p class="text-white">
+        <p class="globalFooterSubText">
          Notre but est de permettre aux fans de jazz et de cookies de trouver l'amour et s'épanouir dans leur vie d'artiste fan de cookies.
          Qu'ils s'identifient en tant qu'Homme, Femme, ou bien Cookie, rien ne les empêchera de trouver saxophone à leur guitare.
         </p>
@@ -99,7 +97,7 @@
         <h5 class="text-uppercase globalFooterText">MENTIONS LEGALES</h5>
         <ul class="list-unstyled mb-0">
           <li>
-            <button type="button" class="btn text-white" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn globalFooterSubText" data-toggle="modal" data-target="#exampleModal">
             Accéder aux mentions légales
             </button>
           </li>
@@ -109,17 +107,17 @@
         <h5 class="text-uppercase mb-0 globalFooterText">NOUS CONTACTER</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer" class="text-white">Contacter nous via email</a>
+            <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer" class="globalFooterSubText">Contacter nous via email</a>
           </li>
           <li>
-              <p class="text-white">Ou bien retrouvez nous à cette adresse : Frafjordstraen 22, 4335 Dirdal, Norway </p>
+              <p class="globalFooterSubText">Ou bien retrouvez nous à cette adresse : Frafjordstraen 22, 4335 Dirdal, Norway </p>
           </li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="text-center p-3 text-white">
+  <div class="text-center p-3 globalFooterSubText">
     © 2021 Copyright: MunchInc
   </div>
 </footer>
