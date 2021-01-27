@@ -41,28 +41,40 @@
     <?php $tabSingles = crTbSingles()?>
     <!-- Card management -->
     <div class="container-fluid">
-      <h1 class="loversTitleCards">Voici nos candidats à conquête</h1>
+      <div class="text-center loversTitleDiv">
+        <h1 class="loversTitleCards">Nos candidats à conquête</h1>
+      </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 justify-content-around">
         <?php 
-          for ($i = 0 ; $i < count($tabSingles) ; $i++){ ?>
-            <div class="col">
-              <div class="card border-dark loversCardSingle">
-                <div class="mx-auto">
-                  <img src="../assets/img/<?= $tabSingles[$i]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
-                </div>
-                <div class="card-header text-center">
-                  <h2 class="card-title loversCardTitle"><?= $tabSingles[$i]["firstname"] . " " . $tabSingles[$i]["lastname"] ?></h2>
-                </div>
-                <div class="card-body">
-                  <p class="loversCardText">Age : <?= $tabSingles[$i]["age"]?></p>
-                      <a href="" class="loversCardBtnLike">Mangez-moi</a>
-                </div>
-                <div class="card-footer loversCardFooter">
-                  Footer
+          for ($i = 0 ; $i < count($tabSingles) ; $i++){ 
+            if (($_COOKIE["searchingFor"] == $tabSingles[$i]["gender"])||($_COOKIE["searchingFor"]=="cookie")){?>
+              <div class="col">
+                <div class="card border-dark shadow-lg p-3 mb-5 rounded loversCardSingle">
+                  <div class="mx-auto">
+                    <img src="../assets/img/<?= $tabSingles[$i]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
+                  </div>
+                  <div class="card-header text-center">
+                    <h2 class="card-title loversCardTitle"><?= $tabSingles[$i]["firstname"] . " " . $tabSingles[$i]["lastname"] ?></h2>
+                  </div>
+                  <div class="card-body">
+                    <p class="loversCardText">Age : <?= $tabSingles[$i]["age"]?></p>
+                    <div class="mx-auto">
+                        <a href="" class="loversCardBtnLike">Mangez-moi</a>
+                    </div>
+                  </div>
+                  <div class="card-footer loversCardFooter">
+                    <div class="card-text text-center">
+                      <p class="loversCardFooterPart">Code postal</p>
+                      <p> <?= $tabSingles[$i]["zipcode"] ?></p>
+                    </div>
+                    <div class="card-text text-center"><p class="loversCardFooterPart">Description </p></div>
+                    
+                    <p><?= $tabSingles[$i]["description"] ?></p>
+                  </div>
                 </div>
               </div>
-            </div>
-          <?php } ?>
+            <?php  }
+           } ?>
         </div>
     </div>
     <script src="assets/js/script.js"></script>

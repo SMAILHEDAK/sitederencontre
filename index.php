@@ -76,7 +76,6 @@
            <input type="submit" name="submit_button" value="S'enregistrer!">
         </form>
     </div>
-    <a href="views/lovers.php">LOVERS</a>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
