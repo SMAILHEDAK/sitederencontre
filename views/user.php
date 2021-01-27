@@ -16,15 +16,14 @@
     <title>Made with "LOVE"</title>
 
 </head>
-
 <body class="usersBody">
-<nav class="navStyle navbar navbar-expand-sm sticky-top navStyle">
-  <a class="navbar-brand" href="#">Logo</a>
+<nav class="navbar navbar-expand-sm sticky-top navStyle ">
+  <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
       </li>
@@ -83,8 +82,49 @@
 
 </div>
 
+<!-- footer -->
+<footer class="text-center text-lg-start globalFooter">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase globalFooterText">NOTRE MISSION</h5>
+        <p class="text-white">
+         Notre but est de permettre aux fans de jazz et de cookies de trouver l'amour et s'épanouir dans leur vie d'artiste fan de cookies.
+         Qu'ils s'identifient en tant qu'Homme, Femme, ou bien Cookie, rien ne les empêchera de trouver saxophone à leur guitare.
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase globalFooterText">MENTIONS LEGALES</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <button type="button" class="btn text-white" data-toggle="modal" data-target="#exampleModal">
+            Accéder aux mentions légales
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0 globalFooterText">NOUS CONTACTER</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer" class="text-white">Contacter nous via email</a>
+          </li>
+          <li>
+              <p class="text-white">Ou bien retrouvez nous à cette adresse : Frafjordstraen 22, 4335 Dirdal, Norway </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-
-    <script src="/assets/js/script.js"></script>
+  <div class="text-center p-3 text-white">
+    © 2021 Copyright: MunchInc
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

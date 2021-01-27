@@ -23,6 +23,14 @@
   color:#E36414;
 }
 
+.globalFooter{
+  background-color: #4A2B0D!important;
+}
+
+.globalFooterText{
+  color:#E36414;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* page LOVERS.PHP */
 .loversBody{
@@ -167,6 +175,17 @@
   height: 200px;
 }
 
+<<<<<<< HEAD
+=======
+/* .col{
+  border: 1px solid red;
+}
+
+.row{
+  border: 1px solid blue;
+} */
+
+>>>>>>> c432fd7c12f6511c30ce320b1e154bff5ac95401
 /* FOOTER */
 .globalFooter{
   background-color: #4A2B0D!important;

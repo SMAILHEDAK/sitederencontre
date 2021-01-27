@@ -61,25 +61,25 @@
                                         <div class="row mb-3">
                                        <label for="lastname">Nom :</label>
                                        <div class="col">
-                                       <input type="text" name="lastname" id="lastname">
+                                       <input type="text" name="lastname" id="lastname" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="surname">Prénom :</label>
                                        <div class="col">
-                                       <input type="text" name="surname" id="surname">
+                                       <input type="text" name="surname" id="surname" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="age">Age :</label>
                                        <div class="col">
-                                       <input type="text" name="age" id="age">
+                                       <input type="text" name="age" id="age" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="gender">Genre :</label>
                                        <div class="col d-flex justify-content-center">
-                                       <select name="gender" id="gender" class="form-select w-auto">
+                                       <select name="gender" id="gender" class="form-select w-auto" required>
                                            <option value="gender">genre</option>
                                            <option value="homme">homme</option>
                                            <option value="femme">femme</option>
@@ -90,19 +90,19 @@
                                        <div class="row mb-3">
                                        <label for="postcode">Code Postal :</label>
                                        <div class="col">
-                                       <input type="text" name="postcode" id="postcode">
+                                       <input type="text" name="postcode" id="postcode"required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="mail">Adresse Mail :</label>
                                        <div class="col">
-                                       <input type="email" name="mail" id="mail">
+                                       <input type="email" name="mail" id="mail" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="searchingFor">Vous recherchez :</label>
                                        <div class="col d-flex justify-content-center">
-                                       <select name="searchingFor" id="searchingFor" class="form-select w-auto">
+                                       <select name="searchingFor" id="searchingFor" class="form-select w-auto" required>
                                            <option value="genre">genre</option>
                                            <option value="homme">homme</option>
                                            <option value="femme">femme</option>
