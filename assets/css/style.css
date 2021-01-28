@@ -33,6 +33,10 @@
   font-size: x-large;
 }
 
+.navCustom-toggler {
+  color: var(--colGreen);
+} 
+
 .iconColor{
   color:#E36414;
 }
@@ -47,11 +51,11 @@
 }
 
 input[type=text], input[type=email], input[type=submit]{
-  box-shadow: 2px 2px 2px 1px #E36414;
+  box-shadow: var(--valShadow);
 }
 
 select {
-  box-shadow: 2px 2px 2px 1px #E36414;
+  box-shadow: var(--valShadow);
 }
 
 input::-webkit-outer-spin-button,
@@ -62,7 +66,7 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
-  box-shadow: 2px 2px 1px 1px #E36414;
+  box-shadow: var(--valShadow);
 }
 
 .globalFont{
@@ -171,7 +175,7 @@ input[type=number] {
   height: 100%;
   margin-bottom: 350px;
   box-shadow: 3px 2px 2px 0px rgba(51,51,51,0.5);
-  box-shadow: 2px 2px 2px 1px #E36414;
+  box-shadow: var(--valShadow);
 }
 
 

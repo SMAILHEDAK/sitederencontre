@@ -31,7 +31,8 @@
 <nav class="navbar navbar-expand-sm sticky-top navStyle ">
   <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+  <i class="fas fa-bars" style="color: #2b934875"></i>
+    <!-- <span class="navbar-toggler-icon"></span> -->
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ms-auto">
