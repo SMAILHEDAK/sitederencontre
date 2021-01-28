@@ -28,10 +28,10 @@
         <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="lovers.php">Nos célibataires</a>
+        <a class="nav-link navTxtLink" href="lovers.php">Nos célibataires</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="user.php">Profil</a>
+        <a class="nav-link navTxtLink" href="user.php">Profil</a>
       </li>    
     </ul>
   </div>  
@@ -71,7 +71,7 @@
         <div class="col col-md-1 mb-3 usersInfoTitle">Vous recherchez</div>
         <div class="col col-md-2 mb-3 usersInfoData"><?= $_COOKIE["searchingFor"] ?></div>
       </div>
-      <div class="row justify-content-center text-center usersBtnDiv">
+      <div class="row d-flex justify-content-center text-center usersBtnDiv">
         <div class="col col-md-2 align-self-center">
           <a href="user.php?clickBtnRaz=true" class="usersBtnRaz">Effacer le profil</a>
         </div>
@@ -83,8 +83,8 @@
 </div>
 
 <!-- footer -->
-<footer class="text-center text-lg-start globalFooter">
-  <div class="container p-4">
+<footer class="text-center text-lg-start globalFooter h-auto fixed-bottom">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
         <h5 class="text-uppercase globalFooterText">NOTRE MISSION</h5>
@@ -117,7 +117,7 @@
     </div>
   </div>
 
-  <div class="text-center p-3 globalFooterSubText">
+  <div class="text-center globalFooterSubText">
     © 2021 Copyright: MunchInc
   </div>
 </footer>
