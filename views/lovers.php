@@ -83,9 +83,9 @@
     </div>
 
     <!-- footer -->
-    <?php require "assets/html/footer1.html"; ?>
-    <?php require "assets/html/footer2.html"; ?>
-    <?php require "assets/html/footer3.html"; ?>
+    <?php require "../assets/html/footer1.html"; ?>
+    <?php require "../assets/html/footer2.html"; ?>
+    <?php require "../assets/html/footer3.html"; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
