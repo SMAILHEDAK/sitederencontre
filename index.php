@@ -21,14 +21,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
 
     <!-- self style + icon tab -->
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/logo.png">
     <title>Munch</title>
 </head>
+<body class="container-fluid wh-100 m-0 p-0 globalFont w-auto">
 
-<body class="container-fluid wh-100 m-0 p-0">
-
-    <header class="container-fluid d-flex justify-content-center align-items-center" id="welcome">
+    <header class="container-fluid d-flex justify-content-center align-items-center indexHeader" id="welcome">
     <i class="fas fa-cookie-bite fa-3x iconColor" alt="BITEME">MUNCH</i>
     </header>
       <!-------------------------------------------------------------------------------------------------------------------------------------------->
@@ -36,14 +35,11 @@
         <!-------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-    <section class="indexParallax" id="welcomeForm">
-        <section class="container-fluid w-75 h-auto d-flex indexWelcomeFormImage justify-content-center">
+        <section class="indexParallax index" id="welcomeForm">
+        <section class="container-fluid w-75 h-auto d-flex indexWelcomeFormImage justify-content-center pt-5 pb-5">
             <div class="row welcomeFormImage align-items-center">
                 <div class="col-md-6">
-                    <div class="row pt-4">
-                        <div class="col-md-12">
-                        </div>
-                    </div>
+                    
                     <div class="row p-5">
                         <div class="col-md-12">
                             <div>
@@ -60,11 +56,8 @@
                 <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
                 <div id="info" class="indexWelcomeForm col-md-6">
-                    <div class="align-items-center row pt-4">
-                        <div class="col-md-12">
-                        </div>
-                    </div>
-                    <div class="row p-5">
+                    
+                    <div>
                         <div class="col-md-12 text-center fw-bold">
                             <div class="text-center">
                                 <div id="formcard" class="container-fluid">
@@ -72,52 +65,50 @@
                                         <div class="row mb-3">
                                        <label for="lastname">Nom :</label>
                                        <div class="col">
-                                       <input type="text" name="lastname" id="lastname" required>
+                                       <input type="text" name="lastname" id="lastname" required="">
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="surname">Prénom :</label>
                                        <div class="col">
-                                       <input type="text" name="surname" id="surname" required>
+                                       <input type="text" name="surname" id="surname" required="">
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="age">Age :</label>
                                        <div class="col">
-                                       <input type="number" name="age" id="age" min="16" max="100" required>
+                                       <input type="number" name="age" id="age" min="16" max="100" required="">
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="gender">Genre :</label>
                                        <div class="col d-flex justify-content-center">
-                                       <select name="gender" id="gender" class="form-select w-auto" required>
-                                           <option value="gender">genre</option>
-                                           <option value="homme">homme</option>
-                                           <option value="femme">femme</option>
-                                           <option value="cookie">cookie</option>
+                                       <select name="gender" id="gender" class="w-auto" required="">
+                                           <option value="homme">Homme</option>
+                                           <option value="femme">Femme</option>
+                                           <option value="cookie">Cookie</option>
                                        </select>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="postcode">Code Postal :</label>
                                        <div class="col">
-                                       <input type="number" name="postcode" id="postcode" min="0" required>
+                                       <input type="number" name="postcode" id="postcode" min="0" required="">
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="mail">Adresse Mail :</label>
                                        <div class="col">
-                                       <input type="email" name="mail" id="mail" required>
+                                       <input type="email" name="mail" id="mail" required="">
                                        </div>
                                        </div>
                                        <div class="row mb-3">
                                        <label for="searchingFor">Vous recherchez :</label>
                                        <div class="col d-flex justify-content-center">
-                                       <select name="searchingFor" id="searchingFor" class="form-select w-auto" required>
-                                           <option value="genre">genre</option>
-                                           <option value="homme">homme</option>
-                                           <option value="femme">femme</option>
-                                           <option value="cookie">cookie</option>
+                                       <select name="searchingFor" id="searchingFor" class="w-auto" required="">
+                                           <option value="homme">Homme</option>
+                                           <option value="femme">Femme</option>
+                                           <option value="cookie">Cookie</option>
                                        </select>
                                        </div>
                                        </div>
@@ -128,11 +119,13 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 </section>
 
-    <?php require "controllers/footer.html"; ?>
-
+    <?php require "assets/html/footer1.html"; ?>
+    <?php require "assets/html/footer2index.html"; ?>
+    <?php require "assets/html/footer3.html"; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
