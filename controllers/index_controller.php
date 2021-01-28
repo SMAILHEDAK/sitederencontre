@@ -20,13 +20,13 @@ if(isset($_POST['submit_button'])) {
     $searchingFor = $_POST["searchingFor"];
     $searchingFor = htmlentities($searchingFor);
     if($lastname && $surname && $age && $gender && $email && $postcode && $searchingFor){
-        setcookie("lastname", $lastname, time()+86400);
-        setcookie("surname", $surname, time()+86400);
-        setcookie("age", $age, time()+86400);
-        setcookie("gender", $gender, time()+86400);
-        setcookie("postcode", $postcode, time()+86400);
-        setcookie("email", $email, time()+86400);
-        setcookie("searchingFor", $searchingFor, time()+86400);
+        setcookie("lastname", $lastname, time()+86400,"/");
+        setcookie("surname", $surname, time()+86400,"/");
+        setcookie("age", $age, time()+86400,"/");
+        setcookie("gender", $gender, time()+86400,"/");
+        setcookie("postcode", $postcode, time()+86400,"/");
+        setcookie("email", $email, time()+86400,"/");
+        setcookie("searchingFor", $searchingFor, time()+86400,"/");
         header( "Location:views/lovers.php");
 		exit();
 }

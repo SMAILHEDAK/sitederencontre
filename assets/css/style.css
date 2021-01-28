@@ -12,7 +12,6 @@
 --colMars: #4c8fa0;
 --colVenus: pink;
 --colCookie: #5a32a099;
---colGreen: #2b934875;
 --valShadow: 2px 2px 2px 1px #E36414;
 }
 
@@ -28,9 +27,8 @@
 }
 
 .navTxtUser{
-  color: var(--colGreen);
+  color: white;
   font-family: var(--nameFont), sans-serif;
-  font-size: x-large;
 }
 
 .navCustom-toggler {
@@ -80,10 +78,6 @@ input[type=number] {
   font-family: var(--nameFont), sans-serif;
 }
 
-.loversContainer{
-  box-shadow: var(--valShadow);
-}
-
 .loversTitleDiv{
   width: 500px;
   height: 55px;
@@ -106,7 +100,7 @@ input[type=number] {
 }
 
 .loversCardFooter{
-  background-color: var(--colGreen);
+  background-color: #fa0f3a;
   color: white;
 }
 
@@ -181,6 +175,11 @@ input[type=number] {
 
 .indexWelcomeForm{
   background-color: #fb7b2c80;
+  border-radius: var(--valRadiusBtn);
+}
+
+.indexImage{
+  border-radius: var(--valRadiusBtn);
 }
 
 .indexParallax {

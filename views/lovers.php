@@ -52,33 +52,31 @@
     <?php $tabSingles = crTbSingles()?>
 
     <!-- Card management -->
-    <div class="container-fluid indexParallax loversContainer">
+    <div class="container-fluid indexParallax">
       <div class="text-center mx-auto mb-3 loversTitleDiv w-auto">
         <h1 class="loversTitleCards">Nos candidats à conquête</h1>
       </div>
 
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 d-flex justify-content-center">
-        <?php
-          $tabIndexSingles = crTbIndexSinglesRandom(count($tabSingles));
+        <?php 
           for ($i = 0 ; $i < count($tabSingles) ; $i++){ 
-            $ind = $tabIndexSingles[$i];
-            if ($_COOKIE["searchingFor"] == $tabSingles[$ind]["gender"]){?>
+            if (($_COOKIE["searchingFor"] == $tabSingles[$i]["gender"])||($_COOKIE["searchingFor"]=="cookie")){?>
 
             <!-- if gender searching = gender of the table's row OR gender searching = "cookie", creation of the card -->
               <div class="col loversCardCol d-flex justify-content-center mx-3">
                 <div data-aos="zoom-out" data-aos-duration="2000">
                   <div class="card border-dark shadow-lg rounded loversCardSingle d-flex align-self-center my-3">
                     <div class="mx-auto mt-3">
-                      <img src="../assets/img/<?= $tabSingles[$ind]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
+                      <img src="../assets/img/<?= $tabSingles[$i]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
                     </div>
                     <div class="card-header text-center">
-                      <h2 class="card-title loversCardTitle"><?= $tabSingles[$ind]["firstname"] . " " . $tabSingles[$ind]["lastname"] ?></h2>
+                      <h2 class="card-title loversCardTitle"><?= $tabSingles[$i]["firstname"] . " " . $tabSingles[$i]["lastname"] ?></h2>
                     </div>
                     <div class="card-body">
                       <div class="loversCardBody">
-                        <p class="loversCardText">Age : <?= $tabSingles[$ind]["age"]?></p>
+                        <p class="loversCardText">Age : <?= $tabSingles[$i]["age"]?></p>
                         <?php
-                          switch ($tabSingles[$ind]["gender"]){
+                          switch ($tabSingles[$i]["gender"]){
                             case "homme" : ?> <i class="fas fa-mars fa-2x loversColMars"></i> <?php ; break;
                             case "femme" : ?> <i class="fas fa-venus fa-2x loversColVenus"></i> <?php ; break;
                             case "cookie" : ?> <i class="fas fa-venus-mars fa-2x loversColCookie"></i> <?php ; break;
@@ -92,11 +90,11 @@
                     <div class="card-footer loversCardFooter">
                       <div class="card-text text-center">
                         <p class="loversCardFooterPart">Code postal</p>
-                        <p> <?= $tabSingles[$ind]["zipcode"] ?></p>
+                        <p> <?= $tabSingles[$i]["zipcode"] ?></p>
                       </div>
                       <div class="card-text text-center"><p class="loversCardFooterPart">Description </p></div>
                       
-                      <p><?= $tabSingles[$ind]["description"] ?></p>
+                      <p><?= $tabSingles[$i]["description"] ?></p>
                     </div>
                   </div>
                 </div>

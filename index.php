@@ -31,19 +31,112 @@
     <i class="fas fa-cookie-bite fa-3x iconColor" alt="BITEME">MUNCH</i>
     </header>
       <!-------------------------------------------------------------------------------------------------------------------------------------------->
-        <!------------------------------------------------------------   BLOC IMAGE   --------------------------------------------------------------->
+        <!------------------------------------------------------------   BLOC MD a XL   --------------------------------------------------------------->
         <!-------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-        <section class="indexParallax index" id="welcomeForm">
-        <section class="container-fluid w-75 h-auto d-flex indexWelcomeFormImage justify-content-center pt-5 pb-5">
+        <section class="indexParallax index d-flex align-items-center vh-100 d-none d-sm-block" id="welcomeForm">
+        <section class="container-fluid w-75 d-flex indexWelcomeFormImage justify-content-center pt-5">
             <div class="row welcomeFormImage align-items-center">
                 <div class="col-md-6">
                     
                     <div class="row p-5">
                         <div class="col-md-12">
                             <div>
-                                <img src="assets/img/imageform.jpg" class="img-fluid">
+                                <img src="assets/img/imageform.jpg" class="img-fluid indexImage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <!--------------------------------------------------------------------------------------------------------------------------------------------->
+                <!---------------------------------------------------   BLOC FORMULAIRE   ----------------------------------------------------------->
+                <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <div id="info" class="indexWelcomeForm col-md-6">
+                    
+                    <div>
+                        <div class="col-md-12 text-center fw-bold">
+                            <div class="text-center">
+                                <div id="formcard" class="container-fluid">
+                                    <form action="index.php" method="post">
+                                        <div class="row mb-3">
+                                       <label for="lastname">Nom :</label>
+                                       <div class="col">
+                                       <input type="text" name="lastname" id="lastname" required="">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="surname">Prénom :</label>
+                                       <div class="col">
+                                       <input type="text" name="surname" id="surname" required="">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="age">Age :</label>
+                                       <div class="col">
+                                       <input type="number" name="age" id="age" min="16" max="100" required="">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="gender">Genre :</label>
+                                       <div class="col d-flex justify-content-center">
+                                       <select name="gender" id="gender" class="w-auto" required="">
+                                           <option value="homme">Homme</option>
+                                           <option value="femme">Femme</option>
+                                           <option value="cookie">Cookie</option>
+                                       </select>
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="postcode">Code Postal :</label>
+                                       <div class="col">
+                                       <input type="number" name="postcode" id="postcode" min="0" required="">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="mail">Adresse Mail :</label>
+                                       <div class="col">
+                                       <input type="email" name="mail" id="mail" required="">
+                                       </div>
+                                       </div>
+                                       <div class="row mb-3">
+                                       <label for="searchingFor">Vous recherchez :</label>
+                                       <div class="col d-flex justify-content-center">
+                                       <select name="searchingFor" id="searchingFor" class="w-auto" required="">
+                                           <option value="homme">Homme</option>
+                                           <option value="femme">Femme</option>
+                                           <option value="cookie">Cookie</option>
+                                       </select>
+                                       </div>
+                                       </div>
+                                       <input type="submit" name="submit_button" value="S'enregistrer!" class="indexBtnSubmit">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------   BLOC XS a SM   --------------------------------------------------------------->
+        <!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+        <section class="indexParallax index vh-auto d-block d-sm-none d-flex justify-content-center " id="welcomeForm">
+        <section class="container-fluid w-75 indexWelcomeFormImage pt-5 pb-5">
+            <div class="row welcomeFormImage align-items-center">
+                <div class="col-md-6">
+                    
+                    <div class="row p-5">
+                        <div class="col-md-12">
+                            <div>
+                                <img src="assets/img/imageform.jpg" class="img-fluid indexImage">
                             </div>
                         </div>
                     </div>
