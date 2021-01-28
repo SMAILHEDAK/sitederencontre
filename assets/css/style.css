@@ -9,6 +9,9 @@
 --colBtnTxt: saddlebrown;
 --colBtnBorder: #341f09;
 --valRadiusBtn: 10px;
+--colMars: #4c8fa0;
+--colVenus: pink;
+--colCookie: #5a32a099;
 }
 
 /* Global Styles */
@@ -128,6 +131,27 @@ input[type=number] {
   border-radius: var(--valRadiusBtn);
 }
 
+.loversColMars{
+  color: var(--colMars);
+}
+
+.loversColVenus{
+  color: var(--colVenus);
+}
+
+.loversColCookie{
+  color: var(--colCookie);
+}
+
+.loversColMars, .loversColVenus, .loversColCookie{
+  display: block;
+}
+
+.loversCardBody{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* page index.php */
 .indexHeader{
