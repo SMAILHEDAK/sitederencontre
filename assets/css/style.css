@@ -40,6 +40,29 @@
   font-family: var(--nameFont), sans-serif;
 }
 
+input[type=text], input[type=email], input[type=submit]{
+  box-shadow: 2px 2px 2px 1px #E36414;
+}
+
+select {
+  box-shadow: 2px 2px 2px 1px #E36414;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  box-shadow: 2px 2px 1px 1px #E36414;
+}
+
+.globalFont{
+  font-family: var(--nameFont), sans-serif;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* page LOVERS.PHP */
 .loversBody{
@@ -107,7 +130,17 @@
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* page index.php */
+.indexHeader{
+  background-color: #4A2B0D!important;
+}
 
+.index{
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  margin-bottom: 350px;
+  box-shadow: 3px 2px 2px 0px rgba(51,51,51,0.5);
+}
 .indexWelcomeFormImage{
   background-color: #fb7b2c80;
 }
@@ -204,7 +237,7 @@
 }
 
 
-/* FOOTER */
+/* FOOTER Global*/
 .globalFooter{
   background-color: #4A2B0D!important;
 }
@@ -215,4 +248,13 @@
 
 .globalFooterSubText{
   color: var(--colFootTxt);
+}
+
+/* FOOTER 2 INDEX */
+.indexFooter{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 350px;  
+  padding-left: 50px;
 }

@@ -6,7 +6,7 @@ function crTbSingles (){
   ["lastname"=>"Grapelli", "firstname"=>"Stéphane", "age"=>"35", "gender"=>"homme", "mail"=>"stephgrappelli@laposte.net", "zipcode"=>"62420", "picture"=>"GrappelliS12.jpg", "description"=>"Avec mon pote Django nous avons fait les 400 coups, mais maintenant j'aimerais me poser un peu !"],
   ["lastname"=>"Reinhardt", "firstname"=>"Django", "age"=>"28", "gender"=>"homme", "mail"=>"djreinhardt@yahoo.fr", "zipcode"=>"32000", "picture"=>"ReinhardtD13.jpg", "description"=>"Mon ami Stéphane veut à tout prix me caser, je préfère prendre les devants !"],
   ["lastname"=>"Ellington", "firstname"=>"Duke", "age"=>"36", "gender"=>"homme", "mail"=>"dellington@gmail.com", "zipcode"=>"432600", "picture"=>"EllingtonD14.jpg", "description"=>"Mes copains sont ma famille, j'aimerais l'agrandir"],
-  ["lastname"=>"Davis", "firstname"=>"Miles", "age"=>"36", "gender"=>"homme", "mail"=>"mildavis@live.com", "zipcode"=>"648890", "picture"=>"DavisM15.jpg", "description"=>"mon incroyable sensibilité vous séduira"],
+  ["lastname"=>"Davis", "firstname"=>"Miles", "age"=>"36", "gender"=>"homme", "mail"=>"mildavis@live.com", "zipcode"=>"648890", "picture"=>"DavisM15.jpg", "description"=>"Mon incroyable sensibilité vous séduira"],
   ["lastname"=>"Shorty", "firstname"=>"Trombone", "age"=>"24", "gender"=>"homme", "mail"=>"TromboneShorty@theposte.net", "zipcode"=>"564200", "picture"=>"ShortyT16.jpg", "description"=>"GlobeTrotter dans l'âme pour partager ma musique avec un maximum de personnes"],
   ["lastname"=>"Maalouf", "firstname"=>"Ibrahim", "age"=>"42", "gender"=>"homme", "mail"=>"IMaalouf@laposte.net", "zipcode"=>"93180", "picture"=>"MaaloufI17.jpg", "description"=>"La trompette à 4 pistons, c'est moi !"],
   ["lastname"=>"Brown", "firstname"=>"James", "age"=>"26", "gender"=>"homme", "mail"=>"brownjam@hotmail.com", "zipcode"=>"078650", "picture"=>"BrownJ18.jpg", "description"=>"Je suis quelque peu hyper actif, j'adore danser"],
@@ -20,8 +20,8 @@ function crTbSingles (){
   ["lastname"=>"Morrow", "firstname"=>"Sarah", "age"=>"28", "gender"=>"femme", "mail"=>"smorrow@live.fr", "zipcode"=>"04290", "picture"=>"MorrowS5.jpg", "description"=>"Exercer un métier de mec n'est pas pour me déplaire"],
   ["lastname"=>"Schneider", "firstname"=>"Maria", "age"=>"41", "gender"=>"femme", "mail"=>"schneidermaria@gmail.com", "zipcode"=>"05820", "picture"=>"SchneiderM6.jpg", "description"=>"Je suis très curieuse et j'ai du caractère, un peu touche à tout"],
   ["lastname"=>"Renaudin", "firstname"=>"Lucienne", "age"=>"22", "gender"=>"femme", "mail"=>"lucienRenaud@laposte.net", "zipcode"=>"44380", "picture"=>"RenaudinL7.jpg", "description"=>"Même avec un vieux prénom on peut être moderne. "],
-  ["lastname"=>"Holiday", "firstname"=>"Billie", "age"=>"44", "gender"=>"femme", "mail"=>"holidaybill@theposte.net", "zipcode"=>"06640", "picture"=>"HolidayB8.jpg", "description"=>"hyper sensible, je n'aime pas les machos"],
-  ["lastname"=>"Baker", "firstname"=>"Joséphine", "age"=>"32", "gender"=>"femme", "mail"=>"jbaker@aol.com", "zipcode"=>"39540", "picture"=>"BakerJ9.jpg", "description"=>"contrairement à ce que mon nom indique, je ne suis pas très bonne cuisinière, mais je saurai vous séduire autrement..."]];
+  ["lastname"=>"Holiday", "firstname"=>"Billie", "age"=>"44", "gender"=>"femme", "mail"=>"holidaybill@theposte.net", "zipcode"=>"06640", "picture"=>"HolidayB8.jpg", "description"=>"Hyper sensible, je n'aime pas les machos"],
+  ["lastname"=>"Baker", "firstname"=>"Joséphine", "age"=>"32", "gender"=>"femme", "mail"=>"jbaker@aol.com", "zipcode"=>"39540", "picture"=>"BakerJ9.jpg", "description"=>"Contrairement à ce que mon nom indique, je ne suis pas très bonne cuisinière, mais je saurai vous séduire autrement..."]];
 
   // line type
   // ["lastname"=>"", "firstname"=>"", "age"=>"", "gender"=>"", "mail"=>"@", "zipcode"=>"", "picture"=>"", "description"=>""]
