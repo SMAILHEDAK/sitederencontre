@@ -13,6 +13,7 @@
 --colMars: #4c8fa0;
 --colVenus: pink;
 --colCookie: #5a32a099;
+--valShadow: 2px 2px 2px 2px #E36414;
 }
 
 /* Global Styles */
@@ -51,6 +52,10 @@
   font-family: var(--nameFont), sans-serif;
 }
 
+.loversContainer{
+  box-shadow: var(--valShadow);
+}
+
 .loversTitleDiv{
   width: 500px;
   height: 55px;
@@ -73,7 +78,7 @@
 }
 
 .loversCardFooter{
-  background-color: #fa0f3a99;
+  background-color: #2b934875;
   color: white;
 }
 

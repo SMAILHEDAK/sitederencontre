@@ -52,7 +52,7 @@
     <?php $tabSingles = crTbSingles()?>
 
     <!-- Card management -->
-    <div class="container-fluid indexParallax">
+    <div class="container-fluid indexParallax loversContainer">
       <div class="text-center mx-auto mb-3 loversTitleDiv w-auto">
         <h1 class="loversTitleCards">Nos candidats à conquête</h1>
       </div>
