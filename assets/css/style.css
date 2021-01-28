@@ -5,6 +5,7 @@
 --nameFont: "Nunito";
 --colBack: #fb7b2c80;
 --colBack2: #fb7b2c50;
+--colBackOp: #fb7b2c90;
 --colFootTxt: #FCBC95;
 --colBtnTxt: saddlebrown;
 --colBtnBorder: #341f09;
@@ -61,7 +62,7 @@
 }
 
 .loversCardFooter{
-  background-color: #fa0f3a;
+  background-color: #fa0f3a99;
   color: white;
 }
 
@@ -156,7 +157,7 @@
 }
 
 .usersInfoData, .usersInfoTitle{
-  background-color: var(--colBack2);
+  background-color: var(--colBackOp);
   border-radius: var(--valRadiusBtn);
   
 }
@@ -179,9 +180,10 @@
   display: block;
   border: 1px solid var(--colBtnTxt);
   border-radius: var(--valRadiusBtn);
-  color: var(--colBtnTxt);
+  /* color: var(--colBtnTxt); */
+  color: black;
   text-decoration: none;
-  background-color: var(--colBack);
+  background-color: var(--colBackOp);
   transition: transform 450ms, background-color 450ms, color 450ms;
 }
 

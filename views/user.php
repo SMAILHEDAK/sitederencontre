@@ -7,35 +7,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="/var/www/html/sitederencontre/assets/css/style.css" rel="stylesheet">
+    
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CDN Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- CDN font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Made with "LOVE"</title>
+
+    <!-- self style + icon tab -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <title>Munch</title>
 
 </head>
 <body class="usersBody">
-<nav class="navbar navbar-expand-sm sticky-top navStyle ">
-  <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="lovers.php">Nos célibataires</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="user.php">Profil</a>
-      </li>    
-    </ul>
-  </div>  
-</nav>
+  <nav class="navbar navbar-expand-sm sticky-top navStyle ">
+    <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lovers.php">Nos célibataires</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user.php">Profil</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
 
   <div class="container-fluid indexParallax">
     <div class="text-center mx-auto mb-3 usersTitleDiv">
@@ -43,52 +53,54 @@
     </div>
 
     <!-- Display cookie's informations -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Nom</div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["lastname"] ?></div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Nom</div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["lastname"] ?></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Prénom</div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["surname"] ?></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Age</div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["age"] ?></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Genre</div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["gender"] ?></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Code Postal</div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["postcode"] ?></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Email</div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["email"] ?></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Vous recherchez</div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["searchingFor"] ?></div>
+    </div>
+    <div class="row justify-content-center text-center usersBtnDiv">
+      <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 align-self-center">
+        <a href="user.php?clickBtnRaz=true" class="usersBtnRaz">Effacer le profil</a>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Prénom</div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["surname"] ?></div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 align-self-center">
+        <a href="http://www.meetic.fr" class="usersBtnMeetic" target="_blank">Aller sur le site de Meetic</a>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Age</div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["age"] ?></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Genre</div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["gender"] ?></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Code Postal</div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["postcode"] ?></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Email</div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["email"] ?></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Vous recherchez</div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["searchingFor"] ?></div>
-      </div>
-      <div class="row justify-content-center text-center usersBtnDiv">
-        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 align-self-center">
-          <a href="user.php?clickBtnRaz=true" class="usersBtnRaz">Effacer le profil</a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 align-self-center">
-          <a href="http://www.meetic.fr" class="usersBtnMeetic" target="_blank">Aller sur le site de Meetic</a>
-        </div>
-      </div>
+    </div>
 
-</div>
+  </div>
 
-    <!-- footer -->
-    <?php require "../controllers/footer.html"; ?>
+  <!-- footer -->
+  <?php require "../controllers/footer.html"; ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
 </body>
 </html>
