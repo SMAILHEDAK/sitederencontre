@@ -1,5 +1,14 @@
 <?php
 
+function crTbIndexSinglesRandom($nbSingles){
+  // Creation of a table with the index of singles table mixed
+  for ($i = 1 ; $i <= $nbSingles ;  $i++){
+    $tabIndex[$i-1] = $i-1;
+  }
+  shuffle($tabIndex);
+  return $tabIndex;
+}
+
 function crTbSingles (){
   // Creation of the singles table
   $tb = [["lastname"=>"Hancock", "firstname"=> "Herbie", "age"=>"33 ans", "gender"=>"homme", "mail"=>"JohnDoe@gmail.com", "zipcode"=>"36400", "picture"=>"HancockH19.jpg", "description"=>"Bel homme de 33 ans, sportif, aime le cinéma et les ballades et ... le piano !"],
@@ -9,11 +18,11 @@ function crTbSingles (){
   ["lastname"=>"Davis", "firstname"=>"Miles", "age"=>"36", "gender"=>"homme", "mail"=>"mildavis@live.com", "zipcode"=>"648890", "picture"=>"DavisM15.jpg", "description"=>"Mon incroyable sensibilité vous séduira"],
   ["lastname"=>"Shorty", "firstname"=>"Trombone", "age"=>"24", "gender"=>"homme", "mail"=>"TromboneShorty@theposte.net", "zipcode"=>"564200", "picture"=>"ShortyT16.jpg", "description"=>"GlobeTrotter dans l'âme pour partager ma musique avec un maximum de personnes"],
   ["lastname"=>"Maalouf", "firstname"=>"Ibrahim", "age"=>"42", "gender"=>"homme", "mail"=>"IMaalouf@laposte.net", "zipcode"=>"93180", "picture"=>"MaaloufI17.jpg", "description"=>"La trompette à 4 pistons, c'est moi !"],
-  ["lastname"=>"Brown", "firstname"=>"James", "age"=>"26", "gender"=>"homme", "mail"=>"brownjam@hotmail.com", "zipcode"=>"078650", "picture"=>"BrownJ18.jpg", "description"=>"Je suis quelque peu hyper actif, j'adore danser"],
-  ["lastname"=>"Tatum", "firstname"=>"Art", "age"=>"34", "gender"=>"homme", "mail"=>"arttatum@live.fr", "zipcode"=>"958670", "picture"=>"TatumA10.jpg", "description"=>"Je suis tellement habile de mes doigts ..."],
+  ["lastname"=>"Brown", "firstname"=>"James", "age"=>"26", "gender"=>"cookie", "mail"=>"brownjam@hotmail.com", "zipcode"=>"078650", "picture"=>"BrownJ18.jpg", "description"=>"Je suis quelque peu hyper actif, j'adore danser"],
+  ["lastname"=>"Tatum", "firstname"=>"Art", "age"=>"34", "gender"=>"cookie", "mail"=>"arttatum@live.fr", "zipcode"=>"958670", "picture"=>"TatumA10.jpg", "description"=>"Je suis tellement habile de mes doigts ..."],
   ["lastname"=>"Legrand", "firstname"=>"Michel", "age"=>"56", "gender"=>"homme", "mail"=>"mikethegreat@hotmail.com", "zipcode"=>"75100", "picture"=>"LegrandM11.jpg", "description"=>"Grand poête, je saurai vous charmer"],
-  ["lastname"=>"Fitzgerald", "firstname"=>"Ella", "age"=>"45", "gender"=>"femme", "mail"=>"ellafitz@hotmail.com", "zipcode"=>"85720", "picture"=>"FitzgeraldE0.jpg", "description"=>"Femme de 45 ans, chanteuse de jazz, j'adore le scatt"],
-  ["lastname"=>"Bley", "firstname"=>"Carla", "age"=>"27", "gender"=>"femme", "mail"=>"cbley@theposte.net", "zipcode"=>"05200", "picture"=>"BleyC1.jpg", "description"=>"Jeune femme pianiste principalement dans le jazz, mais j'aime aussi le rock et la pop !"],
+  ["lastname"=>"Fitzgerald", "firstname"=>"Ella", "age"=>"45", "gender"=>"cookie", "mail"=>"ellafitz@hotmail.com", "zipcode"=>"85720", "picture"=>"FitzgeraldE0.jpg", "description"=>"Femme de 45 ans, chanteuse de jazz, j'adore le scatt"],
+  ["lastname"=>"Bley", "firstname"=>"Carla", "age"=>"27", "gender"=>"cookie", "mail"=>"cbley@theposte.net", "zipcode"=>"05200", "picture"=>"BleyC1.jpg", "description"=>"Jeune femme pianiste principalement dans le jazz, mais j'aime aussi le rock et la pop !"],
   ["lastname"=>"Jones", "firstname"=>"Norah", "age"=>"24", "gender"=>"femme", "mail"=>"jonesnorah@gmail.com", "zipcode"=>"74610", "picture"=>"JonesN2.jpg", "description"=>"Je suis quelqu'un de très ouvert et j'ai une magnifique voix. Mes animaux de compagnie sont d'accord !"],
   ["lastname"=>"Simone", "firstname"=>"Nina", "age"=>"32", "gender"=>"femme", "mail"=>"simonen@yahoo.fr", "zipcode"=>"73750", "picture"=>"SimoneN3.jpg", "description"=>"J'aime me faire entendre, mais je n'aime pas qu'on me dise monsieur Simon..."],
   ["lastname"=>"Paceo", "firstname"=>"Anne", "age"=>"37", "gender"=>"femme", "mail"=>"anpaceo@yahoo.fr", "zipcode"=>"71150", "picture"=>"PaceoA4.jpg", "description"=>"Je suis une furieuse, j'aime taper, mais sous la carapace, un tendre coeur bat !"],
