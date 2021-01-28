@@ -12,11 +12,8 @@
 --colMars: #4c8fa0;
 --colVenus: pink;
 --colCookie: #5a32a099;
-<<<<<<< HEAD
---valShadow: 2px 2px 2px 2px #E36414;
-=======
+--colGreen: #2b934875;
 --valShadow: 2px 2px 2px 1px #E36414;
->>>>>>> a81ee7f638c1fc136af5f8edacb36495bbc4dd26
 }
 
 /* Global Styles */
@@ -31,8 +28,9 @@
 }
 
 .navTxtUser{
-  color: white;
+  color: var(--colGreen);
   font-family: var(--nameFont), sans-serif;
+  font-size: large;
 }
 
 .iconColor{
@@ -104,11 +102,7 @@ input[type=number] {
 }
 
 .loversCardFooter{
-<<<<<<< HEAD
-  background-color: #2b934875;
-=======
-  background-color: #fa0f3a;
->>>>>>> a81ee7f638c1fc136af5f8edacb36495bbc4dd26
+  background-color: var(--colGreen);
   color: white;
 }
 

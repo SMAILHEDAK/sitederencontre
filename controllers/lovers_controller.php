@@ -1,5 +1,15 @@
 <?php
 
+function crTbIndexSinglesRandom($nbSingles){
+  // Creation of a table with the index of singles table randomly arranged
+  for ($i = 1 ; $i <= $nbSingles ; $i++){
+    $tbIndexSinglesRandom [$i-1] = $i-1;
+  }
+  // mix the index
+  shuffle($tbIndexSinglesRandom);
+  return $tbIndexSinglesRandom;
+}
+
 function crTbSingles (){
   // Creation of the singles table
   $tb = [["lastname"=>"Hancock", "firstname"=> "Herbie", "age"=>"33 ans", "gender"=>"homme", "mail"=>"JohnDoe@gmail.com", "zipcode"=>"36400", "picture"=>"HancockH19.jpg", "description"=>"Bel homme de 33 ans, sportif, aime le cinéma et les ballades et ... le piano !"],
