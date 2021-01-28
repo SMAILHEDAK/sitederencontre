@@ -35,15 +35,15 @@
         <!-------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-        <section class="indexParallax index vh-100 d-none d-sm-block" id="welcomeForm">
-        <section class="container-fluid w-75 d-flex indexWelcomeFormImage justify-content-center pt-5 pb-5">
+        <section class="indexParallax index d-flex align-items-center vh-100 d-none d-sm-block" id="welcomeForm">
+        <section class="container-fluid w-75 d-flex indexWelcomeFormImage justify-content-center pt-5">
             <div class="row welcomeFormImage align-items-center">
                 <div class="col-md-6">
                     
                     <div class="row p-5">
                         <div class="col-md-12">
                             <div>
-                                <img src="assets/img/imageform.jpg" class="img-fluid">
+                                <img src="assets/img/imageform.jpg" class="img-fluid indexImage">
                             </div>
                         </div>
                     </div>
@@ -128,15 +128,15 @@
         <!-------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-        <section class="indexParallax index vh-auto d-block d-sm-none " id="welcomeForm">
-        <section class="container-fluid w-75 d-flex indexWelcomeFormImage justify-content-center pt-5 pb-5">
+        <section class="indexParallax index vh-auto d-block d-sm-none d-flex justify-content-center " id="welcomeForm">
+        <section class="container-fluid w-75 indexWelcomeFormImage pt-5 pb-5">
             <div class="row welcomeFormImage align-items-center">
                 <div class="col-md-6">
                     
                     <div class="row p-5">
                         <div class="col-md-12">
                             <div>
-                                <img src="assets/img/imageform.jpg" class="img-fluid">
+                                <img src="assets/img/imageform.jpg" class="img-fluid indexImage">
                             </div>
                         </div>
                     </div>
