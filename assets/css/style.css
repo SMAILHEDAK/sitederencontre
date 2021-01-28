@@ -22,7 +22,6 @@
 }
 
 .navTxtLink{
-  
   font-family: var(--nameFont), sans-serif!important;
   color: var(--colFootTxt)!important;
 }
@@ -35,7 +34,7 @@
 
 .navCustom-toggler {
   color: var(--colGreen);
-} 
+}
 
 .iconColor{
   color:#E36414;

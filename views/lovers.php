@@ -38,6 +38,16 @@
       <li class="nav-item">
         <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle navTxtLink" href="#" id="navbardrop" data-toggle="dropdown">
+          Vous cherchez
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="lovers.php?genderChoice=homme">un homme</a>
+          <a class="dropdown-item" href="lovers.php?genderChoice=femme">une femme</a>
+          <a class="dropdown-item" href="lovers.php?genderChoice=cookie">un cookie</a>
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link navTxtLink" href="lovers.php">Nos célibataires</a>
       </li>
@@ -85,7 +95,7 @@
                           }
                         ?>
                       </div>
-                      <div class="mx-auto">
+                      <div class="d-flex justify-content-center">
                           <a href="" class="loversCardBtnLike"><i class="fas fa-cookie-bite"></i> Mangez-moi</a>
                       </div>
                     </div>
@@ -115,6 +125,7 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    
     <script src="assets/js/script.js"></script>
 
     <!-- JS pour AOS -->

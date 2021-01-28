@@ -1,5 +1,11 @@
 <?php
 
+if (isset($_GET["genderChoice"])){
+  setcookie("searchingFor", $_GET["genderChoice"], time() + 86400, "/");
+  header( "Location:lovers.php");
+  exit();
+}
+
 function crTbIndexSinglesRandom($nbSingles){
   // Creation of a table with the index of singles table mixed
   for ($i = 1 ; $i <= $nbSingles ;  $i++){
