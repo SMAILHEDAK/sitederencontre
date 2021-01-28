@@ -39,10 +39,10 @@
         <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="lovers.php">Nos célibataires</a>
+        <a class="nav-link navTxtLink" href="lovers.php">Nos célibataires</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="user.php">Profil</a>
+        <a class="nav-link navTxtLink" href="user.php">Profil</a>
       </li>    
     </ul>
   </div>  
@@ -53,7 +53,7 @@
 
     <!-- Card management -->
     <div class="container-fluid indexParallax">
-      <div class="text-center mx-auto mb-3 loversTitleDiv">
+      <div class="text-center mx-auto mb-3 loversTitleDiv w-auto">
         <h1 class="loversTitleCards">Nos candidats à conquête</h1>
       </div>
 

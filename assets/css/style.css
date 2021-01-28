@@ -17,8 +17,15 @@
   background-color: #4A2B0D!important;
 }
 
+.navTxtLink{
+  
+  font-family: var(--nameFont), sans-serif!important;
+  color: var(--colFootTxt)!important;
+}
+
 .navTxtUser{
   color: white;
+  font-family: var(--nameFont), sans-serif;
 }
 
 .iconColor{
@@ -31,6 +38,7 @@
 
 .globalFooterText{
   color:#E36414;
+  font-family: var(--nameFont), sans-serif;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------- */

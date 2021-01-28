@@ -84,7 +84,7 @@
                                        <div class="row mb-3">
                                        <label for="age">Age :</label>
                                        <div class="col">
-                                       <input type="text" name="age" id="age" required>
+                                       <input type="number" name="age" id="age" min="16" max="100" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
@@ -101,7 +101,7 @@
                                        <div class="row mb-3">
                                        <label for="postcode">Code Postal :</label>
                                        <div class="col">
-                                       <input type="text" name="postcode" id="postcode"required>
+                                       <input type="number" name="postcode" id="postcode" min="0" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">

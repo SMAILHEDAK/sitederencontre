@@ -27,28 +27,28 @@
 
 </head>
 <body class="usersBody">
-  <nav class="navbar navbar-expand-sm sticky-top navStyle ">
-    <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="lovers.php">Nos célibataires</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="user.php">Profil</a>
-        </li>    
-      </ul>
-    </div>  
-  </nav>
+<nav class="navbar navbar-expand-sm sticky-top navStyle ">
+  <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navTxtLink" href="lovers.php">Nos célibataires</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navTxtLink" href="user.php">Profil</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
 
   <div class="container-fluid indexParallax">
-    <div class="text-center mx-auto mb-3 usersTitleDiv">
+    <div class="text-center mx-auto mb-3 usersTitleDiv w-auto">
       <h1 class="usersTitle">Votre profil</h1>
     </div>
 
@@ -63,7 +63,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Age</div>
-      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["age"] ?></div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3 usersInfoData"><?= $_COOKIE["age"] ?> ans</div>
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mb-3 usersInfoTitle">Genre</div>
