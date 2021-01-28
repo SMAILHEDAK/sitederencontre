@@ -7,24 +7,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CDN BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
-    <!-- CDN AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- CDN Font Awesome -->
+    <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
-    <!-- CDN font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
-
-    <!-- self style + icon tab -->
-    <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/logo.png">
-    <title>Munch</title>
+    <title>Made with "LOVE"</title>
 </head>
 
 <body class="loversBody">
@@ -64,29 +53,27 @@
 
             <!-- if gender searching = gender of the table's row OR gender searching = "cookie", creation of the card -->
               <div class="col loversCardCol d-flex justify-content-center mx-3">
-                <div data-aos="zoom-out" data-aos-duration="2000">
-                  <div class="card border-dark shadow-lg rounded loversCardSingle d-flex align-self-center my-3">
+                <div class="card border-dark shadow-lg rounded loversCardSingle d-flex align-self-center my-3">
+                  <div class="mx-auto">
+                    <img src="../assets/img/<?= $tabSingles[$i]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
+                  </div>
+                  <div class="card-header text-center">
+                    <h2 class="card-title loversCardTitle"><?= $tabSingles[$i]["firstname"] . " " . $tabSingles[$i]["lastname"] ?></h2>
+                  </div>
+                  <div class="card-body">
+                    <p class="loversCardText">Age : <?= $tabSingles[$i]["age"]?></p>
                     <div class="mx-auto">
-                      <img src="../assets/img/<?= $tabSingles[$i]["picture"] ?>" alt="Img profil 0" class="card-img-top loversCardImg">
+                        <a href="" class="loversCardBtnLike"><i class="fas fa-cookie-bite"></i> Mangez-moi</a>
                     </div>
-                    <div class="card-header text-center">
-                      <h2 class="card-title loversCardTitle"><?= $tabSingles[$i]["firstname"] . " " . $tabSingles[$i]["lastname"] ?></h2>
+                  </div>
+                  <div class="card-footer loversCardFooter">
+                    <div class="card-text text-center">
+                      <p class="loversCardFooterPart">Code postal</p>
+                      <p> <?= $tabSingles[$i]["zipcode"] ?></p>
                     </div>
-                    <div class="card-body">
-                      <p class="loversCardText">Age : <?= $tabSingles[$i]["age"]?></p>
-                      <div class="mx-auto">
-                          <a href="" class="loversCardBtnLike"><i class="fas fa-cookie-bite"></i> Mangez-moi</a>
-                      </div>
-                    </div>
-                    <div class="card-footer loversCardFooter">
-                      <div class="card-text text-center">
-                        <p class="loversCardFooterPart">Code postal</p>
-                        <p> <?= $tabSingles[$i]["zipcode"] ?></p>
-                      </div>
-                      <div class="card-text text-center"><p class="loversCardFooterPart">Description </p></div>
-                      
-                      <p><?= $tabSingles[$i]["description"] ?></p>
-                    </div>
+                    <div class="card-text text-center"><p class="loversCardFooterPart">Description </p></div>
+                    
+                    <p><?= $tabSingles[$i]["description"] ?></p>
                   </div>
                 </div>
               </div>
@@ -105,12 +92,5 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
-
-    <!-- JS pour AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
 </body>
 </html>
