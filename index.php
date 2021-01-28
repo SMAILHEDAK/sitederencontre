@@ -73,7 +73,7 @@
                                        <div class="row mb-3">
                                        <label for="age">Age :</label>
                                        <div class="col">
-                                       <input type="text" name="age" id="age" required>
+                                       <input type="number" name="age" id="age" min="16" max="100" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
@@ -90,7 +90,7 @@
                                        <div class="row mb-3">
                                        <label for="postcode">Code Postal :</label>
                                        <div class="col">
-                                       <input type="text" name="postcode" id="postcode"required>
+                                       <input type="number" name="postcode" id="postcode" min="0" required>
                                        </div>
                                        </div>
                                        <div class="row mb-3">
@@ -120,178 +120,9 @@
             </section>
 </section>
 
+    <?php require "controllers/footer.html"; ?>
 
 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">
-                        Mentions Légales</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">
-                            ×</span>
-                    </button>
-                </div>
-
-                <div class="modal-body text-center">
-                    <div>
-
-                        <p>Nom du site web : Munch
-                        <p>
-                        <p>Adresse : www.munch.com</p>
-                        <p>Propriétaire : MunchInc</p>
-                        <p>Responsable de publication : Smaïl/Catherine @LAMANU</p>
-                    </div>
-
-                    <div>Conception et réalisation : MunchInc</p>
-                        <p>Animation : MunchInc </p>
-                        <p>Hébergement : LesCookiesDeBrigittes</p>
-
-                        <p> MunchInc – SAS au capital de 235 cookies – RCS 3.4.5.6 –
-                            Frafjordstraen 22, 4335 Dirdal, Norway
-                            </p>
-                        <p> webmaster@munchme.com </p>
-
-                    </div>
-
-                    <div>
-                        <p>Conditions d’utilisation</p>
-                        <p>
-                            L’utilisation du présent site implique l’acceptation pleine et entière des conditions
-                            générales
-                            d’utilisation décrites ci-après. Ces conditions d’utilisation sont susceptibles d’être
-                            modifiées ou
-                            complétées à tout moment.
-
-                            Les informations et documents du site sont présentés à titre indicatif, ne revêtent pas un
-                            caractère
-                            exhaustif, et ne peuvent engager la responsabilité du propriétaire du site.
-
-                            Le propriétaire du site ne peut être tenu responsable des dommages directs et indirects
-                            consécutifs à
-                            l’accès au site.
-                            Interactivité
-
-                            Les utilisateurs du site peuvent éventuellement y déposer du contenu, apparaissant sur le
-                            site dans des
-                            espaces dédiés (notamment via les commentaires). Le contenu déposé reste sous la
-                            responsabilité de leurs
-                            auteurs, qui en assument pleinement l’entière responsabilité juridique.
-
-                            Le propriétaire du site se réserve le droit de retirer sans préavis et sans justification
-                            tout contenu
-                            déposé par les utilisateurs qui ne satisferait pas à la charte déontologique du site ou à la
-                            législation en
-                            vigueur.
-
-                            Sauf mention contraire, tous les éléments accessibles sur le site (textes, images,
-                            graphismes, logo, icônes,
-                            sons, logiciels, etc.) restent la propriété exclusive de leurs auteurs, en ce qui concerne
-                            les droits de
-                            propriété intellectuelle ou les droits d’usage.
-                        <ol>
-
-                            <li>Toute reproduction, représentation, modification, publication, adaptation de tout ou
-                                partie des éléments du
-                                site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation
-                                écrite préalable de
-                                l’auteur.</li>
-                            <li>
-                                Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il
-                                contient est considérée
-                                comme constitutive d’une contrefaçon et peut être poursuivie en justice.</li>
-                            <li>
-                                Les marques et logos reproduits sur le site sont déposés par les sociétés qui en sont
-                                propriétaires.</li>
-                        </ol>
-                        <p>
-
-                        <p>
-                            Le propriétaire du site décline toute responsabilité et n’est pas engagé par le
-                            référencement via des liens
-                            hypertextes, de ressources tierces présentes sur le réseau Internet, tant en ce qui concerne
-                            leur contenu
-                            que leur pertinence.
-
-                            Le propriétaire du site autorise les liens hypertextes vers l’une des pages de ce site, à
-                            condition que
-                            ceux-ci ouvrent une nouvelle fenêtre et soient présentés de manière non équivoque afin
-                            d’éviter :
-
-                            tout risque de confusion entre le site citant et le propriétaire du site
-                            ainsi que toute présentation tendancieuse, ou contraire aux lois en vigueur.
-
-                            Le propriétaire du site se réserve le droit de demander la suppression d’un lien s’il estime
-                            que le site
-                            source ne respecte pas les règles ainsi définies.
-                            Tout utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données
-                            personnelles le
-                            concernant, en effectuant sa demande écrite et signée, accompagnée d’une preuve d’identité.
-                            5 6 7 8
-
-                            Le site ne recueille pas d’informations personnelles, et n’est pas assujetti à déclaration à
-                            la CNIL. 9
-                        </p>
-                    </div>
-                    <p>
-                    Crédit photos : Photos royalty free de chez pexels.com
-                    </p>
-                    <p>CDN utilisés : Bootstrap 5, Font Awesome.</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                    Fermer</button>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div>
-    </div>
-
-    <!-- footer -->
-<footer class="text-center text-lg-start globalFooter w-auto">
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase globalFooterText">NOTRE MISSION</h5>
-        <p class="globalFooterSubText">
-         Notre but est de permettre aux fans de jazz et de cookies de trouver l'amour et s'épanouir dans leur vie d'artiste fan de cookies.
-         Qu'ils s'identifient en tant qu'Homme, Femme, ou bien Cookie, rien ne les empêchera de trouver saxophone à leur guitare.
-        </p>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase globalFooterText">MENTIONS LEGALES</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <button type="button" class="btn globalFooterSubText" data-toggle="modal" data-target="#exampleModal">
-            Accéder aux mentions légales
-            </button>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-0 globalFooterText">NOUS CONTACTER</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer" class="globalFooterSubText">Contacter nous via email</a>
-          </li>
-          <li>
-              <p class="globalFooterSubText">Ou bien retrouvez nous à cette adresse : Frafjordstraen 22, 4335 Dirdal, Norway </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-center p-3 globalFooterSubText">
-    © 2021 Copyright: MunchInc
-  </div>
-</footer>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
