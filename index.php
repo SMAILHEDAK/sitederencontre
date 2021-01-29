@@ -1,4 +1,3 @@
-<!-- faudra surement que tu changes la source du require -->
 <?php
     require "controllers/index_controller.php";
 ?>
@@ -25,7 +24,7 @@
     <link rel="shortcut icon" href="../assets/img/logo.png">
     <title>Munch</title>
 </head>
-<body class="container-fluid wh-100 m-0 p-0 globalFont w-auto">
+<body id="registerPage" class="container-fluid wh-100 m-0 p-0 globalFont w-auto">
 
     <header class="container-fluid d-flex justify-content-center align-items-center indexHeader" id="welcome">
     <i class="fas fa-cookie-bite fa-3x iconColor" alt="BITEME">MUNCH</i>

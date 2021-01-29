@@ -28,7 +28,7 @@
     <title>Munch</title>
 </head>
 
-<body class="loversBody">
+<body id="meetSingles" class="loversBody">
 
   <?php 
       require "../assets/html/navbar.html";
@@ -40,12 +40,12 @@
   ?>
 
     <!-- Card management -->
-    <div class="container-fluid indexParallax loversContainer">
+    <div id="cardsTitle" class="container-fluid indexParallax loversContainer">
       <div class="text-center mx-auto mb-3 loversTitleDiv w-auto">
         <h1 class="loversTitleCards">Nos candidats à conquête</h1>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 d-flex justify-content-center">
+      <div id="cardsDisplay" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 d-flex justify-content-center">
         <?php 
           $tabIndexSinglesRandom = crTbIndexSinglesRandom(count($tabSingles));
           for ($i = 0 ; $i < count($tabSingles) ; $i++){ 

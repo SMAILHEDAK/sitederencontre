@@ -27,14 +27,14 @@
     <title>Munch</title>
 
 </head>
-<body class="usersBody">
+<body id="profilePage" class="usersBody">
 
   <?php 
     require "../assets/html/navbar.html";
     require "../assets/html/navbar2user.html";
     require "../assets/html/navbar3.html"; ?>
 
-  <div class="container-fluid indexParallax">
+  <div id="profileInfo" class="container-fluid indexParallax">
     <div class="text-center mx-auto mb-3 usersTitleDiv w-auto">
       <h1 class="usersTitle">Votre profil</h1>
     </div>
