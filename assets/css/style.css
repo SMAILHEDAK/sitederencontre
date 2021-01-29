@@ -22,6 +22,11 @@
   background-color: #4A2B0D!important;
 }
 
+.qrCode{
+  max-width:30%;
+  max-height:30%;
+}
+
 .navTxtLink{
   font-family: var(--nameFont), sans-serif!important;
   color: var(--colFootTxt)!important;

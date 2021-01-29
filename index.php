@@ -27,7 +27,7 @@
 <body id="registerPage" class="container-fluid wh-100 m-0 p-0 globalFont w-auto">
 
     <header class="container-fluid d-flex justify-content-center align-items-center indexHeader" id="welcome">
-    <i class="fas fa-cookie-bite fa-3x iconColor">MUNCH</i>
+    <i class="fas fa-cookie-bite fa-3x iconColor" alt="BITEME">MUNCH</i>
     </header>
       <!-------------------------------------------------------------------------------------------------------------------------------------------->
         <!------------------------------------------------------------   BLOC MD a XL   --------------------------------------------------------------->
@@ -42,7 +42,7 @@
                     <div class="row p-5">
                         <div class="col-md-12">
                             <div>
-                                <img src="assets/img/imageform.jpg" class="img-fluid indexImage" alt="welcomeImage">
+                                <img src="assets/img/imageform.jpg" class="img-fluid indexImage">
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
         <!-------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-        <section class="indexParallax index vh-auto d-block d-sm-none d-flex justify-content-center " id="welcomeFormMobile">
+        <section class="indexParallax index vh-auto d-block d-sm-none d-flex justify-content-center " id="welcomeForm">
         <section class="container-fluid w-75 indexWelcomeFormImage pt-5 pb-5">
             <div class="row welcomeFormImage align-items-center">
                 <div class="col-md-6">
