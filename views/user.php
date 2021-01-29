@@ -1,4 +1,5 @@
 <?php
+  require "../controllers/global_controller.php";
   require "../controllers/user_controller.php";
 ?>
 
@@ -27,26 +28,11 @@
 
 </head>
 <body class="usersBody">
-<nav class="navbar navbar-expand-sm sticky-top navStyle ">
-  <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-  <i class="fas fa-bars" style="color: #2b934875"></i>
-    <!-- <span class="navbar-toggler-icon"></span> -->
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link navTxtLink" href="lovers.php">Nos célibataires</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link navTxtLink" href="user.php">Profil</a>
-      </li>    
-    </ul>
-  </div>  
-</nav>
+
+  <?php 
+    require "../assets/html/navbar.html";
+    require "../assets/html/navbar2user.html";
+    require "../assets/html/navbar3.html"; ?>
 
   <div class="container-fluid indexParallax">
     <div class="text-center mx-auto mb-3 usersTitleDiv w-auto">

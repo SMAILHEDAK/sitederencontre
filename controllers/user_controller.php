@@ -1,5 +1,7 @@
 <?php
 
+  changeCookieGender("user");
+
   if (isset($_GET["clickBtnRaz"])){
     eraseCookie();
     header( "Location:../index.php");

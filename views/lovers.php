@@ -1,5 +1,6 @@
 <?php
-  require "../controllers/lovers_controller.php"
+  require "../controllers/global_controller.php";
+  require "../controllers/lovers_controller.php";
 ?>
 
 <!DOCTYPE html>
@@ -28,38 +29,15 @@
 </head>
 
 <body class="loversBody">
-<nav class="navbar navbar-expand-sm sticky-top navStyle ">
-  <a class="navbar-brand" href="lovers.php"><i class="fas fa-cookie-bite fa-2x iconColor" alt="BITEME">MUNCH</i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <i class="fas fa-bars" style="color: #2b934875"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <p class="nav-link navTxtUser" href="#">Bonjour <?= $_COOKIE["surname"]?> <i class="far fa-heart"></i></p>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle navTxtLink" href="#" id="navbardrop" data-toggle="dropdown">
-          Vous cherchez
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="lovers.php?genderChoice=homme">un homme</a>
-          <a class="dropdown-item" href="lovers.php?genderChoice=femme">une femme</a>
-          <a class="dropdown-item" href="lovers.php?genderChoice=cookie">un cookie</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link navTxtLink" href="lovers.php">Nos célibataires</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link navTxtLink" href="user.php">Profil</a>
-      </li>    
-    </ul>
-  </div>  
-</nav>
 
-    <!-- Creation of singles table -->
-    <?php $tabSingles = crTbSingles()?>
+  <?php 
+      require "../assets/html/navbar.html";
+      require "../assets/html/navbar2lovers.html";
+      require "../assets/html/navbar3.html";
+      
+      // Creation of singles table
+      $tabSingles = crTbSingles()
+  ?>
 
     <!-- Card management -->
     <div class="container-fluid indexParallax loversContainer">
