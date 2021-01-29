@@ -13,6 +13,7 @@
 --colVenus: pink;
 --colCookie: #5a32a099;
 --colGreen: #2b934875;
+--colGreen2: #2b9348e1;
 --valShadow: 2px 2px 2px 1px #E36414;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .navTxtUser{
-  color: var(--colGreen);
+  color: var(--colGreen2);
   font-family: var(--nameFont), sans-serif;
   font-size: x-large;
 }
