@@ -15,11 +15,13 @@
 --colGreen: #2b934875;
 --colGreen2: #2b9348e1;
 --valShadow: 2px 2px 2px 1px #E36414;
+--colNavBg: #4A2B0D;
+--colNavDropdownHover: #351d05;
 }
 
 /* Global Styles */
-.navStyle{
-  background-color: #4A2B0D!important;
+.navStyle, .navDropdownBg{
+  background-color: var(--colNavBg)!important;
 }
 
 .qrCode{
@@ -40,6 +42,19 @@
 
 .navCustom-toggler {
   color: var(--colGreen);
+}
+
+.navDropdownTxt {
+  color: var(--colFootTxt)!important;
+  font-size: small;
+}
+
+.navDropdownTxt:hover{
+  background-color: var(--colNavDropdownHover);
+}
+
+.dropdown-menu{
+  width: 136px!important;
 }
 
 .iconColor{

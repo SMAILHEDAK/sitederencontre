@@ -20,10 +20,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
 
     <!-- self style + icon tab -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css?v=1" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/logo.png">
     <title>Munch</title>
 </head>
+
 <body id="registerPage" class="container-fluid wh-100 m-0 p-0 globalFont w-auto">
 
     <header class="container-fluid d-flex justify-content-center align-items-center indexHeader" id="welcome">
